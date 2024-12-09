@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pc uk bg-body min-vh-100">
+    <div id="rst-page-container" class="container px-0 min-vh-100 position-relative content-width-default">
+        <div id="rst-head" class="shadow brb-md-2 p-3">
+            <a href="#" class="col-5 col-md-3"><img src="img/rst-ua-logo.svg" alt="авто продаж" class="logo"></a>
+            <div id="rst-h-help" class="bl-left-w d-none d-lg-block">
+                <h1>Авто базар - Авторинок України.</h1>
+                <p> Автопродаж на RST це понад 400000 б.в. авто,<br> а також продаж нових автомобілів в Україні.</p>
+                <p>Машини продають на сайті RST.</p>
+            </div>
+            <div class="btns ml-auto">
+                <a href="#" class="btn btn-white border-0 btn-bi fs-4"><i class="ri ri-person ri-24"></i><span class="d-none d-lg-inline">Увійти</span></a>
+                <a href="#" class="btn btn-outline-danger mx-sm-3 mx-md-2 btn-bi fs-4"><i class="ri ri-plus ri-24"></i><span class="d-none d-lg-inline">Подати оголошення</span></a>
+                <a href="#" class="btn-menu-open btn-menu btn btn-white py-0 px-2 border-0" data-toggle="modal" data-target="#rst-menu-modal">
+                    <i class="icon-menu"></i><i class="bstar-s" style="display:none">0</i>
+                </a>
+            </div>
+        </div>
+        <div id="rst-menu-modal" class="modal fade m-0" tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px;">
+            <div id="rst-modal" class="container px-0 " style="height:0">
+                <div class="modal-dialog m-0 ml-auto ms-auto pe-2 py-3">
+                    <div class="modal-content overflow-hidden">
+                        <div class="modal-header border-grey">
+                            <a href="#"><img style="height:28px;margin-top:-3px;" src="img/rst-ua-logo.svg" alt="RST.ua"></a>
+                            <button class="btn btn-outline-light btn-menu py-0 px-2 border-0 position-absolute top-0 end-0 me-2 mt-1 close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-menu"></i>
+                            </button>
+                        </div>
+                        <div class="bg-body">
+                            <nav id="rst-menu">
+                                <ul class="m list-unstyled shadow mb-0">
+                                    <li class="i"><b>Продавцям</b></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-person"></i><b>Увійти</b></a></li>
+                                    <li><a href="#" class="text-red i a ic ps-5"><i class="ri ri-plus"></i><b>Подати оголошення</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-arrow-lr o"></i><b>Обмін авто</b></a></li>
+                                    <li><a id="bstar" href="#" class="i a ic ps-5 b"><i class="ri bms-icon"></i><b>Обране</b><i class="bstar-s ml-2 ms-2" style="display:none">0</i></a></li>
+                                    <li class="i"><b>Пошук</b><a href="#" class="count border-0">+ 3'895<i class="ri ri-leaf ri-12"></i></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c1 o"></i><b>Легкові</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c2 o"></i><b>Комерційні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c3 o"></i><b>Вантажні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri new"></i><b>Каталог нових авто</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c4 o"></i><b>Спецтехніка</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c8 o"></i><b>Автобуси</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c5 o"></i><b>Причепи</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-c7 o"></i><b>Мото</b></a></li>
+                                    <li><a href="#" class="i a ps-5">Авторозбірки</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Авто після ДТП</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Не укр. реєстрація</a></li>
+                                    <li class="i g border-0 pb-0"><b>Тех. підтримка</b> <b class="text-red">RST</b></li>
+                                    <li class="i ps-5 g">
+                                        <div class="rst-contacts ">
+                                            <ul class="list-unstyled my-2">
+                                                <li class="d-block mb-2"><a href="tel:+380500640506" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-2 me-2 fs-4"><i class="ri ri-vodafone ri-tel-o mr-2 me-2"></i>050 064 0506</a></li>
+                                                <li class="d-block mb-2"><a href="tel:+380967977107" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-2 me-2 fs-4"><i class="ri ri-kyivstar ri-tel-o mr-2 me-2"></i>096 797 7107</a></li>
+                                                <li class="d-block mb-4"><a href="tel:+380938006208" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-2 me-2 fs-4"><i class="ri ri-lifecell ri-tel-o mr-2 me-2"></i>093 800 6208</a></li>
+                                                <li class="text-grey mb-4 fs-1 ps-1">Час роботи: з <b class="text-body">7:00</b> до <b class="text-body">23:00</b> год.</li>
+                                                <li class="">
+                                                    <a href="#" class="btn btn-outline-secondary fs-2 mr-3 me-3"><i class="ri ri-mail ri-16 ri-f mr-2 me-2"></i>Написати</a>
+                                                    <a href="mailto:editor@rst.ua" class="text-grey fs-1">editor@rst.ua</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="i a ps-5 text-grey">Автоновини</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Правила публікації</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Банерна реклама</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey">Реклама автосалону</a></li>
+                                    <li><a href="#" class="i a ic ps-5 text-grey"><i class="ri ri-leaf"></i><b>Платна підписка</b></a></li>
+                                    <li class="i"><b>Параметри</b></li>
+                                    <li class="i f ic ps-5 align-items-center border-0">
+                                        Мова
+                                        <select class="form-control  form-control-sm form-select form-select-sm form-select-sm ml-auto ms-auto w80 rst-xlang">
+                                            <option value="uk" selected="" data-href="#">УКР</option>
+                                            <option value="ru" data-href="#">РУ</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rst-page-section">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="tb">
+                    <a href="#" class="t pl-2 ps-2"><i class="ri ri-chevron-l ri-14 mr-1 me-1"></i>Назад</a>
+                    <a href="#" class="t"><i class="ri ri-search ri-14 mr-2 me-2"></i>Схожі</a>
+                    <b class="t btn-share">Поділитися<i class="ri ri-facebook ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-viber ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-telegram ri-14 ri-g ml-2 ms-2"></i></b>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-12 col-lg-8 p-0">
+                    <div id="car-p-photo" class="mb-md-3">
+                        <div class="col-12 col-sm-6 col-lg-7 col-xl-6 pr-sm-1 pe-sm-1 position-relative">
+                            <img class="w-100 open open-car" data-i="0" src="#" onerror="this.onerror=null; this.src='img/plug-car.jpg'" alt="Car">
+                            <b class="b-progress rst-progress"></b>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-5 col-xl-6 pl-1 ps-1 d-none d-sm-flex flex-column">
+                            <div class="h-50 mb-1 open" >
+                                <img class="bg" src="#" onerror="this.onerror=null; this.src='img/plug-car.jpg'" alt="Car">
+                                <b class="b-progress rst-progress"></b>
+                            </div>
+                            <div class="h-50 mt-1 open">
+                                <img class="bg" src="#" onerror="this.onerror=null; this.src='img/plug-car.jpg'" alt="Car">
+                                <b class="b-progress rst-progress"></b>
+                            </div>
+                        </div>
+                        <div class="btns-w">
+                            <button class="btn btn-grey py-1 open"><i class="ri ri-zoom ri-14 mr-2 me-2"></i>3 фото</button>
+                        </div>
+                    </div>
+                    <div id="car-p-i" class="bg-white br-md-2 shadow">
+                        <div class="h p-3 ps-md-4 border-bottom border-grey position-relative">
+                            <h2 class="fs-5 mb-3"><a href="#">CAR</a><i class="fs-2 px-2">/</i><a href="#">Class</a></h2>
+                            <div class="row m-0 align-items-start">
+                                <div class="pr col-6 p-0"><b>$20'000<i>= 840'000грн</i></b></div>
+                                <div class="bgs col-6 p-0"><i class="in text-body"><i class="ri ri-eye mr-2 me-2"></i>1000<i class="ri ri-clock mx-2"></i>5 днів</i><u class="t g"><i class="ri ri-arrow-lr"></i><b>обмін</b></u></div>
+                            </div>
+                            <a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                        </div>
+                        <div class="ps row m-0 flex-grow-1 align-items-lg-center">
+                            <ul class="col-12 col-sm-6 p-0 pl-5 ps-5 list-unstyled mt-4 mb-0 mb-sm-4">
+                                <li class="mb-2 ms-md-3" title="рік"><i class="ri ri-date"></i><a href="#" class="text-body">2007</a> <i>р</i></li>
+                                <li class="mb-2 ms-md-3" title="пробiг"><i class="ri ri-speed"></i>30'000<i> км</i></li>
+                                <li class="fs-2 ms-md-3"><i class="ri ri-geo"></i><a href="#" class="text-body" title="регіон">Місто</a> <i>обл</i><i>, </i><a href="#" class="d-inline-block" title="місто">Місто</a></li>
+                            </ul>
+                            <ul class="col-12 col-sm-6 pl-5 ps-5 pr-0 pe-0 px-sm-0 ps-lg-1 list-unstyled my-4">
+                                <li class="mb-2" title="двигун"><i class="ri ri-en ri-h2"></i>3.0 <i title="паливо">Дизель</i></li>
+                                <li class="mb-2" title="КПП"><i class="ri ri-tm ri-h2"></i>Автомат <i title="привід">Повний</i></li>
+                                <li title="кузов"><i class="ri ri-cr ri-h2"></i>Позашляховик <i title="колір">Черный</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white br-md-2 shadow overflow-hidden mt-3">
+                        <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between px-5 py-4">
+                            <div class="mb-2 ms-md-3 mb-3 mb-sm-0">
+                                <p class="fs-4"><i class="ri ri-arrow-lr ri-16 ri-t2 ri-c-lg mr-2 me-2"></i> <b>Обмін</b> на авто $15'000-20'000</p>
+                                <p class="mt-1 fs-2 pl-4 ps-4 ml-1 ms-1">пропозицій - 2</p>
+                            </div>
+                            <form action="#" method="GET">
+                                <button class="btn btn-grey btn-40 text-nowrap text-center min-w-230"><i class="ri ri-arrow-lr ri-18 mr-2 me-2"></i><span class="d-inline-block tfu">запропонувати обмін</span></button>
+                                <input type="hidden" name="_rst_e" value="14847275">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bg-white br-md-2 shadow overflow-hidden mt-3 px-5 py-4">
+                        <div id="oc-item-desc" class="fs-2 position-relative">
+                            <p>Text</p>
+                            <a href="javascript:void(0)">показати ще ...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 px-0 pl-lg-3 ps-lg-3 mt-md-3 mt-lg-0 mb-lg-for-sticky">
+                    <div class="row mx-0 sticky-lg-top pt">
+                        <div class="col-12 col-md-6 col-lg-12 p-0 ps-md-2 ps-lg-0">
+                            <div id="item-banner" class="mt-3 mt-md-0 mt-lg-3">
+                                <div class="jb-p br-md-2 shadow mx-auto" style="width:300px;height:250px;">
+                                    <div class="jb-w overflow-hidden" style="width:300px;height:250px">
+                                        <div id="jb-b"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 p-0">
+                    <h3 class="fs-5 my-4 py-1 pl-3 ps-3">Авто до $20&#039;000</h3>
+                    <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                        <div class="p"><img src="#" class="wm" alt="Купити авто"><img src="#" alt="Купити авто"></div>
+                        <div class="c">
+                            <div class="t"><a class="ai" href="#">CAR<i class="mx-2">&bull;</i><i>Class</i></a>
+                                <div class="pr"><b>$20'000<i>= 840'000грн</i></b>
+                                    <div class="bgs"><u class="t g">Розмитнений</u></div>
+                                </div>
+                            </div>
+                            <div class="ps">
+                                <ul>
+                                    <li title="рік" class="ri ri-date">2024 р</li>
+                                    <li title="двигун" class="ri ri-en">1.5<i title="паливо кпп"> Диз (Мех)</i></li>
+                                    <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                    <li title="регіон" class="ri ri-geo">Місто<i> обл</i></li>
+                                </ul>
+                            </div>
+                            <div class="in" title="платно - 105 грн/доба">вчора<i>, ТОП</i><i class="ri ri-pin"></i></div>
+                        </div>
+                        <a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                    </div>
+                    <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                        <div class="p"><img src="#" class="wm" alt="Купити авто"><img src="#" alt="Купити авто"></div>
+                        <div class="c">
+                            <div class="t"><a class="ai" href="#">CAR<i class="mx-2">&bull;</i><i>Class</i></a>
+                                <div class="pr"><b>$20'000<i>= 840'000грн</i></b>
+                                    <div class="bgs"><u class="t g">Розмитнений</u></div>
+                                </div>
+                            </div>
+                            <div class="ps">
+                                <ul>
+                                    <li title="рік" class="ri ri-date">2024 р</li>
+                                    <li title="двигун" class="ri ri-en">1.5<i title="паливо кпп"> Диз (Мех)</i></li>
+                                    <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                    <li title="регіон" class="ri ri-geo">Місто<i> обл</i></li>
+                                </ul>
+                            </div>
+                            <div class="in" title="платно - 105 грн/доба">вчора<i>, ТОП</i><i class="ri ri-pin"></i></div>
+                            <a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                        <div class="p"><img src="#" class="wm" alt="Купити авто"><img src="#" alt="Купити авто"></div>
+                        <div class="c">
+                            <div class="t"><a class="ai" href="#">CAR<i class="mx-2">&bull;</i><i>Class</i></a>
+                                <div class="pr"><b>$20'000<i>= 840'000грн</i></b>
+                                    <div class="bgs"><u class="t g">Розмитнений</u></div>
+                                </div>
+                            </div>
+                            <div class="ps">
+                                <ul>
+                                    <li title="рік" class="ri ri-date">2024 р</li>
+                                    <li title="двигун" class="ri ri-en">1.5<i title="паливо кпп"> Диз (Мех)</i></li>
+                                    <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                    <li title="регіон" class="ri ri-geo">Місто<i> обл</i></li>
+                                </ul>
+                            </div>
+                            <div class="in" title="платно - 105 грн/доба">вчора<i>, ТОП</i><i class="ri ri-pin"></i></div>
+                            <a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="ex-offer" class="col-12 col-lg-8 p-0 mb-3 d-none">
+                    <h3 class="fs-5 my-4 py-1 pl-3 ps-3">Пропонують на обмін:</h3>
+                    <div id="ex-offer-l" class="ex-items hide-del">
+                        <button class="btn btn-grey fs-5 px-5 d-table mx-auto mt-4">показати ще</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tb">
+                <a href="#" class="t ps-2"><i class="ri ri-chevron-l ri-14 mr-1 me-1"></i>Назад</a>
+                <a href="#" class="t"><i class="ri ri-search ri-14 mr-2 me-2"></i>Схожі</a>
+                <b class="t btn-share">Поділитися<i class="ri ri-facebook ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-viber ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-telegram ri-14 ri-g ml-2 ms-2"></i></b>
+            </div>
+        </div>
+        <footer id="rst-footer" class="pb-2 px-2">
+            <small class="text-grey">© 2006-2024 RST™</small>
+            <a id="fb-review" href="#" class="btn btn-outline-secondary fs-1 me-2 ml-auto ms-auto d-none d-sm-inline-block" data-toggle="modal" data-target="#modal-fb-like">
+                <i class="ri ri-like ri-14 me-2"></i>оцінити RST
+            </a>
+            <span class="me-2 d-none d-sm-inline-block">|</span>
+            <small class="me-3 d-none d-sm-inline-block">
+                <a href="#" hreflang="ru" class="btn btn-outline-secondary fs-1 rst-clang">мова сайту</a>
+            </small>
+            <a href="#" class="btn-menu-open btn-menu btn btn-outline-secondary py-0 px-2" data-toggle="modal" data-target="#rst-menu-modal">
+                <i class="icon-menu"></i>
+            </a>
+        </footer>
+        <div id="modal-fb-like" class="modal fade" tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px;">
+            <div class="modal-dialog modal-dialog-centered justify-content-center align-items-end">
+                <div class="modal-content overflow-hidden mb-md-5 ml-1 mr-1">
+                    <div class="modal-header border-grey"><b class="t-like">Оцінити RST</b><b class="t-fb">Як покращити RST?</b>
+                        <button class="close close-like" data-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body p-0 hide-fb-u">
+                        <div id="fb-like" class="py-4 text-center">
+                            <button class="btn btn-white mr-5 btn-dl"><i class="ri ri-dlike ri-42"></i></button>
+                            <button class="btn btn-white ml-5 btn-l"><i class="ri ri-like ri-42"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-gallery" class="modal mg-lg-row">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-lg-wrap h-100 px-0">
+                    <div class="mg-order-lg-1 pull-lg-left mb-3 pl-3 ps-3">
+                        <div class="text-end pr-3 pe-3 float-end">
+                            <button class="btn-x" data-bs-dismiss="modal"></button>
+                            <div class="tb pr-0 pe-0">
+                                <b class="t btn-share">Поділитися<i class="ri ri-facebook ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-viber ri-14 ri-g ml-2 ms-2"></i><i class="ri ri-telegram ri-14 ri-g ml-2 ms-2"></i></b>
+                            </div>
+                        </div>
+                        <h2 class="fs-5 mb-2"><a href="#">CAR</a><i class="fs-3 text-grey fst-normal px-2">/</i><a href="#">Class</a></h2>
+                        <div class="text-body d-flex align-items-center lh-sm"><b class="fs-7">$20&#039;000</b><i class="text-grey fst-normal ml-2 ms-2">= 840&#039;000 <i class="fs-1 fst-normal">грн</i></i></div>
+                    </div>
+                    <div class="mg-order-lg-0 img-w">
+                        <div class="position-relative h-100">
+                            <img src="#" id="modal-gallery-img" class="rounded shadow" alt="Car">
+                                <button class="col-3 bt-arrow prev"></button>
+                                <button class="col-9 bt-arrow next"></button>
+                                <b class="progress rst-progress"></b>
+                        </div>
+                    </div>
+                    <div class="mg-order-lg-2 pull-lg-left row mx-0 mt-auto mt-lg-0 pt-3 ps-3 d-none d-sm-flex overflow-hidden">
+                        <div class="min-imgs col-6 px-0"></div>
+                        <div class="col-6 px-0 mg-jb-p">
+                            <div class="jb-p br-md-2 mx-auto" style="width:300px;height:250px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-report-vin" class="modal">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content bg-body">
+                <div class="modal-body p-0"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pc uk bg-body min-vh-100">
+    <div id="rst-page-container" class="container px-0 min-vh-100 position-relative ">
+        <div id="rst-head" class="shadow brb-md-2 p-3">
+            <a href="#" class="col-5 col-md-3"><img src="img/rst-ua-logo.svg" alt="авто продаж" class="logo"></a>
+            <div id="rst-h-help" class="bl-left-w d-none d-lg-block">
+                <h1>Авто базар - Авторинок України.</h1>
+                <p> Автопродаж на RST це понад 400000 б.в. авто,<br> а також продаж нових автомобілів в Україні.</p>
+                <p>Машини продають на сайті RST.</p>
+            </div>
+            <div class="btns ml-auto">
+                <a href="#" class="btn btn-white border-0 btn-bi fs-4"><i class="ri ri-person ri-24"></i><span class="d-none d-lg-inline">Увійти</span></a>
+                <a href="#" class="btn btn-outline-danger mx-sm-3 mx-md-2 btn-bi fs-4"><i class="ri ri-plus ri-24"></i><span class="d-none d-lg-inline">Подати оголошення</span></a>
+                <a href="#" class="btn-menu-open btn-menu btn btn-white py-0 px-2 border-0" data-toggle="modal" data-target="#rst-menu-modal">
+                    <i class="icon-menu"></i><i class="bstar-s" style="display:none">0</i>
+                </a>
+            </div>
+        </div>
+        <div id="rst-menu-modal" class="modal fade m-0" tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px;">
+            <div id="rst-modal" class="container px-0 " style="height:0">
+                <div class="modal-dialog m-0 ml-auto ms-auto pe-2 py-3">
+                    <div class="modal-content overflow-hidden">
+                        <div class="modal-header border-grey">
+                            <a href="#"><img style="height:28px;margin-top:-3px;" src="img/rst-ua-logo.svg" alt="RST.ua"></a>
+                            <button class="btn btn-outline-light btn-menu py-0 px-2 border-0 position-absolute top-0 end-0 me-2 mt-1 close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-menu"></i>
+                            </button>
+                        </div>
+                        <div class="bg-body">
+                            <nav id="rst-menu">
+                                <ul class="m list-unstyled shadow mb-0">
+                                    <li class="i"><b>Продавцям</b></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-person"></i><b>Увійти</b></a></li>
+                                    <li><a href="#" class="text-red i a ic ps-5"><i class="ri ri-plus"></i><b>Подати оголошення</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-arrow-lr o"></i><b>Обмін авто</b></a></li>
+                                    <li><a id="bstar" href="#" class="i a ic ps-5 b"><i class="ri bms-icon"></i><b>Обране</b><i class="bstar-s ms-2" style="display:none">0</i></a></li>
+                                    <li class="i"><b>Пошук</b><a href="#" class="count border-0">+ 3'895<i class="ri ri-leaf ri-12"></i></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c1 o"></i><b>Легкові</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c2 o"></i><b>Комерційні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c3 o"></i><b>Вантажні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri new"></i><b>Каталог нових авто</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c4 o"></i><b>Спецтехніка</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c8 o"></i><b>Автобуси</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c5 o"></i><b>Причепи</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-c7 o"></i><b>Мото</b></a></li>
+                                    <li><a href="#" class="i a ps-5">Авторозбірки</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Авто після ДТП</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Не укр. реєстрація</a></li>
+                                    <li class="i g border-0 pb-0"><b>Тех. підтримка</b> <b class="text-red">RST</b></li>
+                                    <li class="i ps-5 g">
+                                        <div class="rst-contacts ">
+                                            <ul class="list-unstyled my-2">
+                                                <li class="d-block mb-2"><a href="tel:+380500640506" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-vodafone ri-tel-o me-2"></i>050 064 0506</a></li>
+                                                <li class="d-block mb-2"><a href="tel:+380967977107" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-kyivstar ri-tel-o me-2"></i>096 797 7107</a></li>
+                                                <li class="d-block mb-4"><a href="tel:+380938006208" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-lifecell ri-tel-o me-2"></i>093 800 6208</a></li>
+                                                <li class="text-grey mb-4 fs-1 ps-1">Час роботи: з <b class="text-body">7:00</b> до <b class="text-body">23:00</b> год.</li>
+                                                <li class="">
+                                                    <a href="#" class="btn btn-outline-secondary fs-2 me-3"><i class="ri ri-mail ri-16 ri-f me-2"></i>Написати</a>
+                                                    <a href="mailto:editor@rst.ua" class="text-grey fs-1">editor@rst.ua</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="i a ps-5 text-grey">Автоновини</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Правила публікації</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Банерна реклама</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey">Реклама автосалону</a></li>
+                                    <li><a href="#" class="i a ic ps-5 text-grey"><i class="ri ri-leaf"></i><b>Платна підписка</b></a></li>
+                                    <li class="i"><b>Параметри</b></li>
+                                    <li class="i f ic ps-5 align-items-center border-0">
+                                        Мова
+                                        <select class="form-control form-control-sm form-select form-select-sm ml-auto ms-auto w80 rst-xlang">
+                                            <option value="uk" selected="" data-href="/ukr/">УКР</option>
+                                            <option value="ru" data-href="/">РУ</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rst-page-section">
+            <div class="tb"><a id="back-page" href="#" class="t pl-2 ps-2">
+            	<i class="ri ri-chevron-l ri-14 mr-1 me-1"></i>Назад</a>
+            </div>
+            <div class="row mx-0 bl-right-w mb-2 flex-grow-1 flex-column flex-lg-row">
+                <div class="col-12 px-0 flex-grow-1 d-flex flex-column flex-column justify-content-center bg-white shadow br-md-2">
+                    <div class="mw-500 bg-body">
+                        <form id="formdb-add-reset" autocomplete="off" method="GET" class="m" name="enter-parameters">
+                            <div class="i f vc justify-content-between py-2 pe-md-5">
+                                <b class="fs-3 mb-0">Введіть параметри:</b>
+                                <p class="fs-1 lh-sm text-right text-end text-danger">Номер<br>не визначено</p>
+                            </div>
+                            <input type="hidden" name="view" value="0">
+                        </form>
+                        <form id="form-add" autocomplete="off" method="POST" class="b10" name="type-car">
+                            <div class="m">
+                                <div class="i b pl-5 ps-5 pe-md-5">
+                                    <div class="row mx-0">
+                                        <label for="body" class="col-4 px-0 col-form-label">Кузов</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="body" class="form-control form-select" required tabindex="1">
+                                                <option value>оберіть</option>
+                                                <optgroup label="Легкові автомобілі">
+                                                    <option selected="selected">Седан</option>
+                                                    <option>Хетчбэк 4/5 дверей</option>
+                                                    <option>Хетчбек 2/3 двері</option>
+                                                    <option>Купе</option>
+                                                    <option>Кабріолет/Родстер</option>
+                                                    <option>Універсал</option>
+                                                    <option>Мінівен</option>
+                                                    <option>Позашляховик</option>
+                                                    <option>Позашляховик-пікап</option>
+                                                </optgroup>
+                                                <optgroup label="Комерційні авто">
+                                                    <option>Фургон пасажир</option>
+                                                    <option>Фургон вантаж-пас.</option>
+                                                    <option>Фургон/пікап вантажний</option>
+                                                    <option>Фургон REF</option>
+                                                    <option>Мікробус пасажир</option>
+                                                    <option>Мікробус вантаж-пас.</option>
+                                                    <option>Мікробус вантажний</option>
+                                                    <option>Мікробус REF</option>
+                                                    <option>Автобус</option>
+                                                    <option>Шасі</option>
+                                                    <option>Шасі REF</option>
+                                                    <option>Самоскид</option>
+                                                    <option>Тягач</option>
+                                                    <option>Спецтехніка</option>
+                                                </optgroup>
+                                                <optgroup label="Мото, Авіа, Водний транспорт">
+                                                    <option>Причіп</option>
+                                                    <option>МОТО-транспорт</option>
+                                                    <option>Авіа-транспорт</option>
+                                                    <option>Водний-транспорт</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i b pl-5 ps-5 pe-md-5">
+                                    <div class="row mx-0 mb-3 h-body h-b22 h-b23 h-b24 h-b25 h-b26">
+                                        <label for="make" class="col-4 px-0 col-form-label">Марка</label>
+                                        <div class="col-8 px-0">
+                                            <select id="make" class="form-control form-select" tabindex="2">
+                                                <option value>оберіть</option>
+                                                <!-- <option value="-1">написати марку &rarr;</option> -->
+                                                <!-- <option disabled>&nbsp;</option> -->
+                                                <option>ACURA</option>
+                                                <option>Aion</option>
+                                                <option>ALFA ROMEO</option>
+                                                <option>ARO</option>
+                                                <option>ASIA</option>
+                                                <option>AUDI</option>
+                                                <option>AUSTIN</option>
+                                                <option>AVIA</option>
+                                                <option>BAIC</option>
+                                                <option class="p">BARKAS</option>
+                                                <option>BAW</option>
+                                                <option>BENTLEY</option>
+                                                <option>BMW</option>
+                                                <option>BRILLIANCE</option>
+                                                <option>BUICK</option>
+                                                <option>BYD</option>
+                                                <option>CADILLAC</option>
+                                                <option class="p">CAMC</option>
+                                                <option>CHANA</option>
+                                                <option class="p">CHANGAN</option>
+                                                <option>Changfeng</option>
+                                                <option class="p">CHANGHE</option>
+                                                <option>CHERY</option>
+                                                <option>CHEVROLET</option>
+                                                <option>CHRYSLER</option>
+                                                <option>CITROEN</option>
+                                                <option>Cupra</option>
+                                                <option>DACIA</option>
+                                                <option>DADI</option>
+                                                <option>DAEWOO</option>
+                                                <option>DAF</option>
+                                                <option>DAIHATSU</option>
+                                                <option>DAYUN</option>
+                                                <option>DODGE</option>
+                                                <option>DONGFENG</option>
+                                                <option class="p">DS</option>
+                                                <option class="p">EOS</option>
+                                                <option>FAW</option>
+                                                <option>FIAT</option>
+                                                <option class="p">Fisker</option>
+                                                <option>FORD</option>
+                                                <option>FOTON</option>
+                                                <option class="p">FREIGHTLINER</option>
+                                                <option class="p">FSO</option>
+                                                <option>GEELY</option>
+                                                <option>GEO</option>
+                                                <option class="p">Ginaf</option>
+                                                <option class="p">GMC</option>
+                                                <option>GREAT WALL</option>
+                                                <option class="p">GROZ</option>
+                                                <option>HAFEI</option>
+                                                <option>Haval</option>
+                                                <option>HONDA</option>
+                                                <option class="p">HOWO</option>
+                                                <option class="p">HUABEI</option>
+                                                <option class="p">HUMMER</option>
+                                                <option>HYUNDAI</option>
+                                                <option>I-VAN</option>
+                                                <option class="p">IFA</option>
+                                                <option class="p">IKARUS</option>
+                                                <option>INFINITI</option>
+                                                <option class="p">INTERNATIONAL</option>
+                                                <option>ISUZU</option>
+                                                <option>IVECO</option>
+                                                <option>JAC</option>
+                                                <option>JAGUAR</option>
+                                                <option>JEEP</option>
+                                                <option class="p">Jetour</option>
+                                                <option class="p">Jinbei</option>
+                                                <option>JONWAY</option>
+                                                <option class="p">KARSAN</option>
+                                                <option>KENWORTH</option>
+                                                <option class="p">KG Mobility</option>
+                                                <option>KIA</option>
+                                                <option>LANCIA</option>
+                                                <option>LAND ROVER</option>
+                                                <option>LDV</option>
+                                                <option>LEXUS</option>
+                                                <option class="p">LIAZ</option>
+                                                <option>LIFAN</option>
+                                                <option>LINCOLN</option>
+                                                <option class="p">Link Tour</option>
+                                                <option>MAN</option>
+                                                <option>MASERATI</option>
+                                                <option class="p">Maxus</option>
+                                                <option>MAYBACH</option>
+                                                <option>MAZDA</option>
+                                                <option>MERCEDES</option>
+                                                <option class="p">MERCURY</option>
+                                                <option>MG</option>
+                                                <option>MINI</option>
+                                                <option>MITSUBISHI</option>
+                                                <option>MUDAN</option>
+                                                <option>NEOPLAN</option>
+                                                <option class="p">NETA</option>
+                                                <option>NISSAN</option>
+                                                <option class="p">NYSA</option>
+                                                <option>OPEL</option>
+                                                <option class="p">PETERBILT</option>
+                                                <option>PEUGEOT</option>
+                                                <option class="p">Polestar</option>
+                                                <option>PONTIAC</option>
+                                                <option>PORSCHE</option>
+                                                <option class="p">PROTON</option>
+                                                <option>Ravon</option>
+                                                <option>RENAULT</option>
+                                                <option>ROBUR</option>
+                                                <option class="p">Rocar</option>
+                                                <option>ROVER</option>
+                                                <option>SAAB</option>
+                                                <option class="p">SAIPA</option>
+                                                <option>SAMAND</option>
+                                                <option class="p">SAMSUNG</option>
+                                                <option>SATURN</option>
+                                                <option class="p">SCANIA</option>
+                                                <option>SCION</option>
+                                                <option>SEAT</option>
+                                                <option class="p">SETRA</option>
+                                                <option>SHAANXI</option>
+                                                <option class="p">SHACMAN</option>
+                                                <option class="p">SHAOLIN</option>
+                                                <option class="p">SHUANGHUAN</option>
+                                                <option class="p">Sinotruk</option>
+                                                <option>SKODA</option>
+                                                <option>Skywell</option>
+                                                <option class="p">SMA</option>
+                                                <option>SMART</option>
+                                                <option class="p">SOUEAST</option>
+                                                <option>SSANGYONG</option>
+                                                <option>SUBARU</option>
+                                                <option>SUZUKI</option>
+                                                <option>TATA</option>
+                                                <option>TEMSA</option>
+                                                <option>Tesla</option>
+                                                <option>TOYOTA</option>
+                                                <option>TRABANT</option>
+                                                <option>VANHOOL</option>
+                                                <option class="p">Venucia</option>
+                                                <option>VOLKSWAGEN</option>
+                                                <option>VOLVO</option>
+                                                <option class="p">WANFENG</option>
+                                                <option>WARTBURG</option>
+                                                <option class="p">Weltmeister</option>
+                                                <option class="p">XINKAI</option>
+                                                <option class="p">YOUYI</option>
+                                                <option class="p">YUEJIN</option>
+                                                <option>Zeekr</option>
+                                                <option>Zotye</option>
+                                                <option>ZUK</option>
+                                                <option>ZXAUTO</option>
+                                                <option>БАЗ</option>
+                                                <option class="p">БЕЛАЗ</option>
+                                                <option>БОГДАН</option>
+                                                <option>ВАЗ</option>
+                                                <option class="p">ВОДНИЙ ТР.</option>
+                                                <option>ГАЗ</option>
+                                                <option>ЕрАЗ</option>
+                                                <option>ЗАЗ</option>
+                                                <option>ЗІЛ</option>
+                                                <option>ІЖ</option>
+                                                <option class="p">КАЗ</option>
+                                                <option>КАМАЗ</option>
+                                                <option>КРАЗ</option>
+                                                <option class="p">ЛАЗ</option>
+                                                <option>МАЗ</option>
+                                                <option>МОСКВИЧ</option>
+                                                <option>МОТО</option>
+                                                <option class="p">ПАЗ</option>
+                                                <option>ПРИЧІП</option>
+                                                <option class="p">РАФ</option>
+                                                <option>РЕТРО</option>
+                                                <option>СПЕЦТЕХНІКА</option>
+                                                <option>УАЗ</option>
+                                                <option>УРАЛ</option>
+                                                <option class="p">ХАЗ</option>
+                                                <option disabled>&nbsp;</option>
+                                                <option disabled>Не знайшли</option>
+                                                <option>написати марку &rarr;</option>
+                                            </select>
+                                            <!-- <input id="imake" class="form-control" type="text" required placeholder="приклад: Ford" tabindex="2" value=""> -->
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mb-3">
+                                        <label for="model" class="col-4 px-0 col-form-label two-name">Модель</label>
+                                        <div class="col-8 px-0">
+                                            <select id="model" class="form-control form-select d-none" disabled tabindex="3">
+                                                <option value>оберіть</option>
+                                            </select>
+                                            <input id="imodel" class="form-control" type="text" required placeholder="приклад: Focus" tabindex="3">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0">
+                                        <label for="modification" class="col-4 px-0 col-form-label col-form-label-sm text-grey two-name">Модифікація</label>
+                                        <div class="col-8 px-0"><input id="modification" class="form-control form-control-sm" type="text"  placeholder="не обов&#039;язково" tabindex="4"></div>
+                                    </div>
+                                </div>
+                                <div class="i b pl-5 ps-5 pe-md-5">
+                                    <div class="row mx-0">
+                                        <label for="year" class="col-4 px-0 col-form-label">Рiк</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="year" class="form-control form-select" required tabindex="5">
+                                                <option value="" disabled selected>оберіть</option>
+                                                <option>2024</option>
+                                                <option>2023</option>
+                                                <option>2022</option>
+                                                <option>2021</option>
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                                <option>2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                                <option>2014</option>
+                                                <option>2013</option>
+                                                <option>2012</option>
+                                                <option>2011</option>
+                                                <option>2010</option>
+                                                <option>2009</option>
+                                                <option>2008</option>
+                                                <option>2007</option>
+                                                <option>2006</option>
+                                                <option>2005</option>
+                                                <option>2004</option>
+                                                <option>2003</option>
+                                                <option>2002</option>
+                                                <option>2001</option>
+                                                <option>2000</option>
+                                                <option>1999</option>
+                                                <option>1998</option>
+                                                <option>1997</option>
+                                                <option>1996</option>
+                                                <option>1995</option>
+                                                <option>1994</option>
+                                                <option>1993</option>
+                                                <option>1992</option>
+                                                <option>1991</option>
+                                                <option>1990</option>
+                                                <option>1989</option>
+                                                <option>1988</option>
+                                                <option>1987</option>
+                                                <option>1986</option>
+                                                <option>1985</option>
+                                                <option>1984</option>
+                                                <option>1983</option>
+                                                <option>1982</option>
+                                                <option>1981</option>
+                                                <option>1980</option>
+                                                <option>1979</option>
+                                                <option>1978</option>
+                                                <option>1977</option>
+                                                <option>1976</option>
+                                                <option>1975</option>
+                                                <option>1974</option>
+                                                <option>1973</option>
+                                                <option>1972</option>
+                                                <option>1971</option>
+                                                <option>1970</option>
+                                                <option>1969</option>
+                                                <option>1968</option>
+                                                <option>1967</option>
+                                                <option>1966</option>
+                                                <option>1965</option>
+                                                <option>1964</option>
+                                                <option>1963</option>
+                                                <option>1962</option>
+                                                <option>1961</option>
+                                                <option>1960</option>
+                                                <option>1959</option>
+                                                <option>1958</option>
+                                                <option>1957</option>
+                                                <option>1956</option>
+                                                <option>1955</option>
+                                                <option>1954</option>
+                                                <option>1953</option>
+                                                <option>1952</option>
+                                                <option>1951</option>
+                                                <option>1950</option>
+                                                <option>1949</option>
+                                                <option>1948</option>
+                                                <option>1947</option>
+                                                <option>1946</option>
+                                                <option>1945</option>
+                                                <option>1944</option>
+                                                <option>1943</option>
+                                                <option>1942</option>
+                                                <option>1941</option>
+                                                <option>1940</option>
+                                                <option>1939</option>
+                                                <option>1938</option>
+                                                <option>1937</option>
+                                                <option>1936</option>
+                                                <option>1935</option>
+                                                <option>1934</option>
+                                                <option>1933</option>
+                                                <option>1932</option>
+                                                <option>1931</option>
+                                                <option>1930</option>
+                                                <option>1929</option>
+                                                <option>1928</option>
+                                                <option>1927</option>
+                                                <option>1926</option>
+                                                <option>1925</option>
+                                                <option>1924</option>
+                                                <option>1923</option>
+                                                <option>1922</option>
+                                                <option>1921</option>
+                                                <option>1920</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="price" class="col-4 px-0 col-form-label text-grey">Ціна в <span class="price-cur-t">&#36;</span></label>
+                                        <div class="col-4 px-0">
+                                            <input id="price" class="price-sel-cur form-control required" type="tel" pattern="[0-9']*" maxlength="10" tabindex="6" required>
+                                        </div>
+                                        <div class="col-4 col-sm-2 pl-2 ps-2 pr-0 pe-0">
+                                            <select id="currency" class="currency form-control form-select required pr-4 pe-4" name="x" tabindex="6">
+                                                <option selected>&#36;</option>
+                                                <option>&#8364;</option>
+                                                <option>грн</option>
+                                            </select>
+                                        </div>
+                                        <div class="price-inf col-8 offset-4 col-sm-2 offset-sm-0 d-sm-flex flex-column justify-content-center text-grey fs-1 lh-sm text-nowrap"></div>
+                                    </div>
+                                    <div class="row mx-0 mt-1 mt-sm-3 h-body h-b22 h-b23 h-b25">
+                                        <label for="run" class="col-4 px-0 col-form-label text-grey ">Пробіг</label>
+                                        <div class="col-4 px-0"><input id="run" class="form-control" type="tel" pattern="[0-9\s]*" maxlength="7" tabindex="8"></div>
+                                        <div class="col-3 pr-0 pe-0 col-form-label text-grey fs-1 text-nowrap"></div>
+                                    </div>
+                                </div>
+                                <div class="i"><b>Параметри</b></div>
+                                <div class="i b pl-5 ps-5 pe-md-5 h-body h-b23">
+                                    <div class="row mx-0">
+                                        <label for="fuel" class="col-4 px-0 col-form-label">Паливо</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="fuel" class="form-control form-select" required tabindex="9">
+                                                <option value>оберіть</option>
+                                                <option value=1>Бензин</option>
+                                                <option value=2>Дизель</option>
+                                                <option value=3>Газ/Бензин</option>
+                                                <option value=4>Гібрид</option>
+                                                <option value=5>Електро</option>
+                                                <option value=6>Водень</option>
+                                                <option value=7>Газ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="engine" class="col-4 px-0 col-form-label py-0 lh-sm fs-2">Об'єм <br> двигуна</label>
+                                        <div class="col-4 px-0">
+                                        	<input id="engine" class="form-control" type="tel" pattern="(0|[0-9\s]{2,6})" maxlength="6" required tabindex="10">
+                                        </div>
+                                        <div class="col-3 pr-0 pe-0 col-form-label text-grey fs-1 text-nowrap">приклад: 1500</div>
+                                    </div>
+                                    <div class="row mx-0 mt-3 h-body h-b25 h-b26">
+                                        <div class="col-8 px-0 offset-4">
+                                        	<select id="gear" class="form-control form-select" required tabindex="11">
+                                                <option value="" disabled selected>КПП</option>
+                                                <option value=1>Автомат</option>
+                                                <option value=2>Механіка</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3 h-body h-b24 h-b25 h-b26">
+                                        <label for="transmission" class="col-4 px-0 col-form-label col-form-label-sm text-grey">Привід</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="transmission" class="form-control form-control-sm form-select form-select-sm text-grey" tabindex="12">
+                                                <option value>не обов&#039;язково</option>
+                                                <option value=1>Передній</option>
+                                                <option value=2>Задній</option>
+                                                <option value=3>Повний</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i b ps-5 pe-md-5">
+                                    <div class="row mx-0">
+                                        <label for="condition" class="col-4 px-0 col-form-label">Стан</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="condition" class="form-control form-select" required tabindex="13">
+                                                <option value>оберіть</option>
+                                                <option value=1>Не вимагає вкладень</option>
+                                                <option value=3>Потребує ремонту</option>
+                                                <option value=4>Після ДТП (з документами)</option>
+                                                <option value=5>Запчастини та комплектуючі</option>
+                                                <option value=7>Нове авто - 0 пробіг</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <div class="col-8 px-0 offset-4">
+                                        	<select id="notcust" class="form-control form-select" required tabindex="14">
+                                                <option value>реєстрація</option>
+                                                <option value=0>українська реєстрація</option>
+                                                <option value=5>не укр. реєст. (ВЖЕ розмитнена в Укр.)</option>
+                                                <option value=6>не укр. реєст. (НЕ розмитнена в Укр.)</option>
+                                                <option value=7>в дорозі або під замовлення (знаходиться не в Україні)</option>
+                                                <option value=4>Б/Н, проблемні документи, двійник</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="color" class="col-4 px-0 col-form-label col-form-label-sm text-grey">Колір</label>
+                                        <div class="col-8 px-0">
+                                        	<input id="color" class="form-control form-control-sm" type="text" name="color" placeholder="не обов&#039;язково" tabindex="15">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i pl-5 ps-5 pe-md-5">
+                                    <div class="row mx-0">
+                                        <label for="region" class="col-4 px-0 col-form-label">Область</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="region" class="form-control form-select" required tabindex="16">
+                                                <option value>оберіть</option>
+                                                <option>Вінницька</option>
+                                                <option>Волинська</option>
+                                                <option>Дніпропетровська</option>
+                                                <option>Донецька</option>
+                                                <option>Житомирська</option>
+                                                <option>Закарпатська</option>
+                                                <option>Запорізька</option>
+                                                <option>Івано-Франківська</option>
+                                                <option>Київ та обл.</option>
+                                                <option>Кіровоградська</option>
+                                                <option>АР Крим</option>
+                                                <option>Луганська</option>
+                                                <option>Львівська</option>
+                                                <option>Миколаївська</option>
+                                                <option>Одеська</option>
+                                                <option>Полтавська</option>
+                                                <option>Рівненська</option>
+                                                <option>Сумська</option>
+                                                <option>Тернопільська</option>
+                                                <option>Харківська</option>
+                                                <option>Херсонська</option>
+                                                <option>Хмельницька</option>
+                                                <option>Черкаська</option>
+                                                <option>Чернігівська</option>
+                                                <option>Чернівецька</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="city" class="col-4 px-0 col-form-label text-grey">Місто</label>
+                                        <div class="col-8 px-0">
+                                        	<select id="city" class="form-control form-select" disabled tabindex="17">
+                                                <option>не обов&#039;язково</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i b pl-5 ps-5 pe-md-5">
+                                    <textarea class="form-control" placeholder="Опис" tabindex="18"></textarea>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="vin" class="col-4 px-0 col-form-label fs-1 lh-1 text-grey tfu">показати VIN</label>
+                                        <div class="col-8 px-0">
+                                            <div class="form-check form-switch mb-0 ml-1 ms-1">
+                                            	<input id="vinshow" class="form-check-input c-pointer switch-show-next" type="checkbox" tabindex="19">
+                                            </div>
+                                            <input id="vin" class="form-control text-uppercase mt-3 d-none" type="text" name="vin" placeholder="Введіть VIN" tabindex="20" minlength="17" maxlength="17" pattern="[ІA-Za-zА-Яа-я0-9\\\-]+">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i"><b>Контакти</b></div>
+                                <div class="i b pl-5 ps-5 pe-md-5">
+                                    <div class="row mx-0">
+                                        <label for="u-tel" class="col-4 px-0 col-form-label">Телефон</label>
+                                        <div class="col-8 px-0">
+                                        	<input id="u-tel" class="form-control" type="tel" maxlength="16" pattern="[\+0-9\s]{6,16}" required value="" tabindex="21">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="u-tel2" class="col-4 px-0 col-form-label fs-1 text-grey">Дод. телефон</label>
+                                        <div class="col-8 px-0">
+                                        	<input id="u-tel2" class="form-control" type="tel" maxlength="16" pattern="[\+0-9\s]{6,16}" tabindex="22">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-3">
+                                        <label for="u-name" class="col-4 px-0 col-form-label">Ваше ім&#039;я</label>
+                                        <div class="col-8 px-0">
+                                        	<input id="u-name" class="form-control" type="text" name="name" tabindex="23" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i"><b>Для входу до кабінету</b></div>
+                                <div id="signin-block" class="signin-list">
+                                    <div class="i b pl-5 ps-5 pe-md-5 h-inf align-items-start flex-column">
+                                        <div class="row mx-0 w-100">
+                                            <label for="u-email" class="col-4 px-0 col-form-label label-add">Email<i>або телефон</i></label>
+                                            <div class="col-8 px-0">
+                                                <input id="u-email" class="form-control" type="email" required autocomplete="username" tabindex="21">
+                                                <p id="email-example" class="mt-2 fs-1 text-grey d-none">приклад: <a href="#" class="text-grey et">tel@rst.ua</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 w-100 mt-3">
+                                            <label for="u-password" class="col-4 px-0 col-form-label py-0 lh-sm fs-2">Пароль до оголошення</label>
+                                            <div class="col-8 px-0 position-relative">
+                                            	<input id="u-password" class="form-control u-pswd" type="password" name="password" required placeholder="від 6 символів" pattern=".{6,}" autocomplete="current-password" tabindex="22">
+                                            	<i class="ri ri-eyeno btn-pswdx"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="i border-0 pl-5 ps-5 pe-md-5">
+                                    <button type="submit" class="btn btn-warning w-100 fs-4" tabindex="26">Подати / Додати фото</button>
+                                </div>
+                                <div class="i fs-0 lh-base text-grey pt-4 border-0">
+                                    <p class="mb-3">Надаючи оголошення, Ви зобов'язуєтеся вказувати достовірну інформацію, а також даєте однозначну згоду на обробку та публікацію знеособлених або персональних даних, якщо такі&nbsp;є.</p>
+                                    <p>Редактор має право відмовити в публікації або видалити розміщену інформацію без пояснення причин.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 px-0 bl-right tech-support">
+                    <div class="sticky-md-top pt">
+                        <div class="bg-white shadow br-md-2 overflow-hidden m mt-3 mt-lg-0">
+                            <div class="i"><b>Тех. підтримка</b> <b class="text-red">RST</b></div>
+                            <div class="i pl-5 ps-5">
+                                <div class="rst-contacts ">
+                                    <ul class="list-unstyled my-2">
+                                        <li class="d-inline-block mb-2"><a href="tel:+380500640506" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-2 me-2 fs-4"><i class="ri ri-vodafone ri-tel-o mr-2 me-2"></i>050 064 0506</a></li>
+                                        <li class="d-inline-block mb-2"><a href="tel:+380967977107" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-3 me-2 fs-4"><i class="ri ri-kyivstar ri-tel-o mr-2 me-2"></i>096 797 7107</a></li>
+                                        <li class="d-inline-block mb-4"><a href="tel:+380938006208" class="btn btn-outline-grey text-primary rounded-pill pr-3 pe-3 mr-2 me-2 fs-4"><i class="ri ri-lifecell ri-tel-o mr-2 me-2"></i>093 800 6208</a></li>
+                                        <li class="text-grey mb-4 fs-1 pl-2 ps-1">Час роботи: з <b class="text-body">7:00</b> до <b class="text-body">23:00</b> год.</li>
+                                        <li class="contact-email">
+                                            <a href="#" class="btn btn-outline-secondary fs-2 mr-3 me-3"><i class="ri ri-mail ri-16 ri-f mr-2 me-2"></i>Написати</a>
+                                            <a href="#" class="text-grey fs-1 contact-email-a">editor@rst.ua</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="rst-footer" class="pb-2 px-2">
+            <small class="text-grey">© 2006-2024 RST™</small>
+            <a id="fb-review" href="#" class="btn btn-outline-secondary fs-1 me-2 ml-auto ms-auto d-none d-sm-inline-block" data-toggle="modal" data-target="#modal-fb-like">
+                <i class="ri ri-like ri-14 me-2"></i>оцінити RST
+            </a>
+            <span class="me-2 d-none d-sm-inline-block">|</span>
+            <small class="me-3 d-none d-sm-inline-block">
+                <a href="#" hreflang="ru" class="btn btn-outline-secondary fs-1 rst-clang">мова сайту</a>
+            </small>
+            <a href="#" class="btn-menu-open btn-menu btn btn-outline-secondary py-0 px-2" data-toggle="modal" data-target="#rst-menu-modal">
+                <i class="icon-menu"></i>
+            </a>
+        </footer>
+        <div id="modal-fb-like" class="modal fade " tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px; ">
+            <div class="modal-dialog modal-dialog-centered justify-content-center align-items-end">
+                <div class="modal-content overflow-hidden mb-md-5 ml-1 mr-1">
+                    <div class="modal-header border-grey"><b class="t-like">Оцінити RST</b><b class="t-fb">Як покращити RST?</b>
+                        <button class="close close-like" data-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body p-0 hide-fb-u">
+                        <div id="fb-like" class="py-4 text-center">
+                            <button class="btn btn-white mr-5 btn-dl"><i class="ri ri-dlike ri-42"></i></button>
+                            <button class="btn btn-white ml-5 btn-l"><i class="ri ri-like ri-42"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/order_page.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pc uk bg-body min-vh-100">
+    <div id="rst-page-container" class="container px-0 min-vh-100 position-relative ">
+        <div id="rst-head" class="shadow brb-md-2 p-3">
+            <a href="#" class="col-5 col-md-3"><img src="img/rst-ua-logo.svg" alt="авто продаж" class="logo"></a>
+            <div id="rst-h-help" class="bl-left-w d-none d-lg-block">
+                <h1>Авто базар - Авторинок України.</h1>
+                <p> Автопродаж на RST це понад 400000 б.в. авто,<br> а також продаж нових автомобілів в Україні.</p>
+                <p>Машини продають на сайті RST.</p>
+            </div>
+            <div class="btns ml-auto">
+                <a href="#" class="btn btn-white border-0 btn-bi fs-4"><i class="ri ri-person ri-24"></i><span class="d-none d-lg-inline">Увійти</span></a>
+                <a href="#" class="btn btn-outline-danger mx-sm-3 mx-md-2 btn-bi fs-4"><i class="ri ri-plus ri-24"></i><span class="d-none d-lg-inline">Подати оголошення</span></a>
+                <a href="#" class="btn-menu-open btn-menu btn btn-white py-0 px-2 border-0" data-toggle="modal" data-target="#rst-menu-modal">
+                    <i class="icon-menu"></i><i class="bstar-s" style="display:none">0</i>
+                </a>
+            </div>
+        </div>
+        <div id="rst-menu-modal" class="modal fade m-0" tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px;">
+            <div id="rst-modal" class="container px-0 " style="height:0">
+                <div class="modal-dialog m-0 ml-auto ms-auto pe-2 py-3">
+                    <div class="modal-content overflow-hidden">
+                        <div class="modal-header border-grey">
+                            <a href="#"><img style="height:28px;margin-top:-3px;" src="img/rst-ua-logo.svg" alt="RST.ua"></a>
+                            <button class="btn btn-outline-light btn-menu py-0 px-2 border-0 position-absolute top-0 end-0 me-2 mt-1 close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-menu"></i>
+                            </button>
+                        </div>
+                        <div class="bg-body">
+                            <nav id="rst-menu">
+                                <ul class="m list-unstyled shadow mb-0">
+                                    <li class="i"><b>Продавцям</b></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-person"></i><b>Увійти</b></a></li>
+                                    <li><a href="#" class="text-red i a ic ps-5"><i class="ri ri-plus"></i><b>Подати оголошення</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-arrow-lr o"></i><b>Обмін авто</b></a></li>
+                                    <li><a id="bstar" href="#" class="i a ic ps-5 b"><i class="ri bms-icon"></i><b>Обране</b><i class="bstar-s ms-2" style="display:none">0</i></a></li>
+                                    <li class="i"><b>Пошук</b><a href="#" class="count border-0">+ 3'895<i class="ri ri-leaf ri-12"></i></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c1 o"></i><b>Легкові</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c2 o"></i><b>Комерційні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c3 o"></i><b>Вантажні</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri new"></i><b>Каталог нових авто</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c4 o"></i><b>Спецтехніка</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c8 o"></i><b>Автобуси</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5"><i class="ri ri-c5 o"></i><b>Причепи</b></a></li>
+                                    <li><a href="#" class="i a ic ps-5 b"><i class="ri ri-c7 o"></i><b>Мото</b></a></li>
+                                    <li><a href="#" class="i a ps-5">Авторозбірки</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Авто після ДТП</a></li>
+                                    <li><a href="#" class="i a ic ps-5">Не укр. реєстрація</a></li>
+                                    <li class="i g border-0 pb-0"><b>Тех. підтримка</b> <b class="text-red">RST</b></li>
+                                    <li class="i ps-5 g">
+                                        <div class="rst-contacts ">
+                                            <ul class="list-unstyled my-2">
+                                                <li class="d-block mb-2"><a href="tel:+380500640506" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-vodafone ri-tel-o me-2"></i>050 064 0506</a></li>
+                                                <li class="d-block mb-2"><a href="tel:+380967977107" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-kyivstar ri-tel-o me-2"></i>096 797 7107</a></li>
+                                                <li class="d-block mb-4"><a href="tel:+380938006208" class="btn btn-outline-grey text-primary rounded-pill pe-3 me-2 fs-4"><i class="ri ri-lifecell ri-tel-o me-2"></i>093 800 6208</a></li>
+                                                <li class="text-grey mb-4 fs-1 ps-1">Час роботи: з <b class="text-body">7:00</b> до <b class="text-body">23:00</b> год.</li>
+                                                <li class="">
+                                                    <a href="#" class="btn btn-outline-secondary fs-2 me-3"><i class="ri ri-mail ri-16 ri-f me-2"></i>Написати</a>
+                                                    <a href="mailto:editor@rst.ua" class="text-grey fs-1">editor@rst.ua</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="i a ps-5 text-grey">Автоновини</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Правила публікації</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey border-white">Банерна реклама</a></li>
+                                    <li><a href="#" class="i a ps-5 g text-grey">Реклама автосалону</a></li>
+                                    <li><a href="#" class="i a ic ps-5 text-grey"><i class="ri ri-leaf"></i><b>Платна підписка</b></a></li>
+                                    <li class="i"><b>Параметри</b></li>
+                                    <li class="i f ic ps-5 align-items-center border-0">
+                                        Мова
+                                        <select class="form-control  form-control-sm form-select form-select-sm form-select-sm ml-auto ms-auto w80 rst-xlang">
+                                            <option value="uk" selected="" data-href="/ukr/">УКР</option>
+                                            <option value="ru" data-href="/">РУ</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rst-page-section">
+            <div id="content-top" class="row m-0">
+                <div class="col-12 p-0 bl-left-w">
+                    <div class="bl-left pt-3 px-2 px-md-0 h-lg-100">
+                        <form id="search" action="#" class="z100">
+                            <div id="search-small">
+                                <a class="d" href="#">Купити авто</a><a class="r">Продати авто</a>
+                                <div class="b">
+                                    <input id="sf-region-bmodal" type="text" value="Вся Україна" class="form-control form-select sel-under-t" data-toggle="modal" data-target="#sf-region-modal" readonly="">
+                                    <select name="region" id="sf-region" class="form-control form-select" data-ajaxonlyone="true" multiple="" style="display: none;">
+                                        <option>Вся Україна</option>
+                                        <option>Вінницька</option>
+                                        <option>Волинська</option>
+                                        <option class="p">Дніпропетровська</option>
+                                        <option>Донецька</option>
+                                        <option>Житомирська</option>
+                                        <option>Закарпатська</option>
+                                        <option>Запорізька</option>
+                                        <option>Івано-Франківська</option>
+                                        <option class="p">Київ та обл.</option>
+                                        <option class="p">Кіровоградська</option>
+                                        <option>АР Крим</option>
+                                        <option>Луганська</option>
+                                        <option>Львівська</option>
+                                        <option class="p">Миколаївська</option>
+                                        <option class="p">Одеська</option>
+                                        <option class="p">Полтавська</option>
+                                        <option>Рівненська</option>
+                                        <option>Сумська</option>
+                                        <option>Тернопільська</option>
+                                        <option class="p">Харківська</option>
+                                        <option>Херсонська</option>
+                                        <option>Хмельницька</option>
+                                        <option>Черкаська</option>
+                                        <option>Чернігівська</option>
+                                        <option>Чернівецька</option>
+                                    </select>
+                                    <select name="city" id="sf-city" class="form-select d-none" disabled="disabled">
+                                        <option value="0">Місто</option>
+                                    </select>
+                                    <a href="javascript:void(0)" class="btn btn-dark d-lg-none ri ri-param btn-table">параметри</a>
+                                </div>
+                            </div>
+                            <div id="tbicons" class="mt-3 d-none d-lg-flex d-block-nojs"><a class="a" href="#" data-make="-1" title="всі легкові"><i class="ri ri-c1"></i></a>
+                                <a href="#" title="всі комерційні" data-make="0" data-b="12 13 14 15 16 17"><i class="ri ri-c2"></i></a>
+                                <a href="#" title="всі вантажні" data-make="0" data-b="20 21"><i class="ri ri-c3"></i></a>
+                                <a href="#" title="вся спецтехніка" data-make="408" data-b="22" class="l"><i class="ri ri-c4"></i></a>
+                                <a href="#" title="всі причепи" data-make="366" data-b="23"><i class="ri ri-c5"></i></a>
+                                <a href="#" title="всі тягачі" data-make="0" data-b="19"><i class="ri ri-c6"></i></a>
+                                <a href="#" title="всі мото" data-make="274" data-b="24"><i class="ri ri-c7"></i></a>
+                                <a href="#" title="всі автобуси" data-make="0" data-b="18"><i class="ri ri-c8"></i></a>
+                                <a href="#" title="всі водні" data-make="121" data-b="26"><i class="ri ri-c9"></i></a>
+                                <a class="r d-none show-tbi" href="javascript:void(0)"><i class="ri ri-chevron-r"></i></a>
+                            </div>
+                            <div id="search-big" class="bg-white shadow rounded d-none d-lg-block d-block-nojs">
+                                <div class="b">
+                                    <div class="w-100 hd1 hd2">
+                                        <input id="sf-body-bmodal" type="text" value="Кузов &nbsp;–&nbsp; всі легкові" class="form-control form-select  sel-under-t" data-toggle="modal" data-target="#sf-body-modal" readonly="">
+                                        <select name="body[]" class="form-control form-select  sel-under-t" id="sf-body" multiple="" style="display: none;">
+                                            <option>Кузов &nbsp;–&nbsp; всі легкові</option>
+                                            <option>Седан</option>
+                                            <option>Універсал</option>
+                                            <option>Хетчбэк 4/5 дверей</option>
+                                            <option>Хетчбек 2/3 двері</option>
+                                            <option>Купе</option>
+                                            <option>Кабріолет/Родстер</option>
+                                            <option>Позашляховик</option>
+                                            <option>Позашляховик-пікап</option>
+                                            <option>Мінівен</option>
+                                            <option>Фургон пасажир</option>
+                                            <option>Мікробус пасажир</option>
+                                            <option disabled="">Виберіть</option>
+                                            <option>Компактний</option>
+                                            <option>Середньорозмірний</option>
+                                            <option>Бізнес/Преміум</option>
+                                        </select>
+                                        <label class="form-control form-select t-over-sel">Кузов <span class="text-grey">&nbsp;–&nbsp; всі легкові</span></label>
+                                    </div>
+                                    <div class="hd1-md-w hd2">
+                                        <select name="make" class="form-control form-select" id="sf-make">
+                                            <option value="0">Марка</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option disabled="">Популярні</option>
+                                            <option class="p">AUDI</option>
+                                            <option class="p">BMW</option>
+                                            <option class="p">CHERY</option>
+                                            <option class="p">CHEVROLET</option>
+                                            <option class="p">CITROEN</option>
+                                            <option class="p">DACIA</option>
+                                            <option class="p">DAEWOO</option>
+                                            <option class="p">FIAT</option>
+                                            <option class="p">FORD</option>
+                                            <option class="p">GEELY</option>
+                                            <option class="p">HONDA</option>
+                                            <option class="p">HYUNDAI</option>
+                                            <option class="p">JEEP</option>
+                                            <option class="p">KIA</option>
+                                            <option class="p">LEXUS</option>
+                                            <option class="p">MAZDA</option>
+                                            <option class="p">MERCEDES</option>
+                                            <option class="p">MITSUBISHI</option>
+                                            <option class="p">NISSAN</option>
+                                            <option class="p">OPEL</option>
+                                            <option class="p">PEUGEOT</option>
+                                            <option class="p">RENAULT</option>
+                                            <option class="p">SKODA</option>
+                                            <option class="p">SUBARU</option>
+                                            <option class="p">TOYOTA</option>
+                                            <option class="p">VOLKSWAGEN</option>
+                                            <option class="p">VOLVO</option>
+                                            <option class="p">ВАЗ</option>
+                                            <option class="p">ГАЗ</option>
+                                            <option class="p">ЗАЗ</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option disabled="">Марка</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option>ACURA</option>
+                                            <option>Aion</option>
+                                            <option>ALFA ROMEO</option>
+                                            <option>ARO</option>
+                                            <option>ASIA</option>
+                                            <option class="p">AUDI</option>
+                                            <option>AUSTIN</option>
+                                            <option>AVIA</option>
+                                            <option>BAIC</option>
+                                            <option>BARKAS</option>
+                                            <option>BAW</option>
+                                            <option>BENTLEY</option>
+                                            <option class="p">BMW</option>
+                                            <option>BRILLIANCE</option>
+                                            <option>BUICK</option>
+                                            <option>BYD</option>
+                                            <option>CADILLAC</option>
+                                            <option>CAMC</option>
+                                            <option>CHANA</option>
+                                            <option>CHANGAN</option>
+                                            <option>Changfeng</option>
+                                            <option>CHANGHE</option>
+                                            <option class="p">CHERY</option>
+                                            <option class="p">CHEVROLET</option>
+                                            <option>CHRYSLER</option>
+                                            <option class="p">CITROEN</option>
+                                            <option>Cupra</option>
+                                            <option class="p">DACIA</option>
+                                            <option>DADI</option>
+                                            <option class="p">DAEWOO</option>
+                                            <option>DAF</option>
+                                            <option>DAIHATSU</option>
+                                            <option>DAYUN</option>
+                                            <option>DODGE</option>
+                                            <option>DONGFENG</option>
+                                            <option>DS</option>
+                                            <option>EOS</option>
+                                            <option>FAW</option>
+                                            <option class="p">FIAT</option>
+                                            <option>Fisker</option>
+                                            <option class="p">FORD</option>
+                                            <option>FOTON</option>
+                                            <option>FREIGHTLINER</option>
+                                            <option>FSO</option>
+                                            <option class="p">GEELY</option>
+                                            <option>GEO</option>
+                                            <option>Ginaf</option>
+                                            <option>GMC</option>
+                                            <option>GREAT WALL</option>
+                                            <option>GROZ</option>
+                                            <option>HAFEI</option>
+                                            <option>Haval</option>
+                                            <option class="p">HONDA</option>
+                                            <option>HOWO</option>
+                                            <option>HUABEI</option>
+                                            <option>HUMMER</option>
+                                            <option class="p">HYUNDAI</option>
+                                            <option>I-VAN</option>
+                                            <option>IFA</option>
+                                            <option>IKARUS</option>
+                                            <option>INFINITI</option>
+                                            <option>INTERNATIONAL</option>
+                                            <option>ISUZU</option>
+                                            <option>IVECO</option>
+                                            <option>JAC</option>
+                                            <option>JAGUAR</option>
+                                            <option class="p">JEEP</option>
+                                            <option>Jetour</option>
+                                            <option>Jinbei</option>
+                                            <option>JONWAY</option>
+                                            <option>KARSAN</option>
+                                            <option>KENWORTH</option>
+                                            <option>KG Mobility</option>
+                                            <option class="p">KIA</option>
+                                            <option>LANCIA</option>
+                                            <option>LAND ROVER</option>
+                                            <option>LDV</option>
+                                            <option class="p">LEXUS</option>
+                                            <option>LIAZ</option>
+                                            <option>LIFAN</option>
+                                            <option>LINCOLN</option>
+                                            <option>Link Tour</option>
+                                            <option>MAN</option>
+                                            <option>MASERATI</option>
+                                            <option>Maxus</option>
+                                            <option>MAYBACH</option>
+                                            <option class="p">MAZDA</option>
+                                            <option class="p">MERCEDES</option>
+                                            <option>MERCURY</option>
+                                            <option>MG</option>
+                                            <option>MINI</option>
+                                            <option class="p">MITSUBISHI</option>
+                                            <option>MUDAN</option>
+                                            <option>NEOPLAN</option>
+                                            <option>NETA</option>
+                                            <option class="p">NISSAN</option>
+                                            <option>NYSA</option>
+                                            <option class="p">OPEL</option>
+                                            <option>PETERBILT</option>
+                                            <option class="p">PEUGEOT</option>
+                                            <option>PLYMOUTH</option>
+                                            <option>Polestar</option>
+                                            <option>PONTIAC</option>
+                                            <option>PORSCHE</option>
+                                            <option>PROTON</option>
+                                            <option>Ravon</option>
+                                            <option class="p">RENAULT</option>
+                                            <option>ROBUR</option>
+                                            <option>Rocar</option>
+                                            <option>ROVER</option>
+                                            <option>SAAB</option>
+                                            <option>SAIPA</option>
+                                            <option>SAMAND</option>
+                                            <option>SAMSUNG</option>
+                                            <option>SATURN</option>
+                                            <option>SCANIA</option>
+                                            <option>SCION</option>
+                                            <option>SEAT</option>
+                                            <option>SETRA</option>
+                                            <option>SHAANXI</option>
+                                            <option>SHACMAN</option>
+                                            <option>SHAOLIN</option>
+                                            <option>SHUANGHUAN</option>
+                                            <option>Sinotruk</option>
+                                            <option class="p">SKODA</option>
+                                            <option>Skywell</option>
+                                            <option>SMA</option>
+                                            <option>SMART</option>
+                                            <option>SOUEAST</option>
+                                            <option>SSANGYONG</option>
+                                            <option class="p">SUBARU</option>
+                                            <option>SUZUKI</option>
+                                            <option>TATA</option>
+                                            <option>TEMSA</option>
+                                            <option>Tesla</option>
+                                            <option class="p">TOYOTA</option>
+                                            <option>TRABANT</option>
+                                            <option>VANHOOL</option>
+                                            <option>Venucia</option>
+                                            <option class="p">VOLKSWAGEN</option>
+                                            <option class="p">VOLVO</option>
+                                            <option>WANFENG</option>
+                                            <option>WARTBURG</option>
+                                            <option>Weltmeister</option>
+                                            <option>XINKAI</option>
+                                            <option>Xpeng</option>
+                                            <option>YOUYI</option>
+                                            <option>YUEJIN</option>
+                                            <option>Zeekr</option>
+                                            <option>Zotye</option>
+                                            <option>ZUK</option>
+                                            <option>ZXAUTO</option>
+                                            <option>БАЗ</option>
+                                            <option>БЕЛАЗ</option>
+                                            <option>БОГДАН</option>
+                                            <option class="p">ВАЗ</option>
+                                            <option>ВОДНИЙ ТР.</option>
+                                            <option class="p">ГАЗ</option>
+                                            <option>ЕрАЗ</option>
+                                            <option class="p">ЗАЗ</option>
+                                            <option>ЗІЛ</option>
+                                            <option>ІЖ</option>
+                                            <option>КАЗ</option>
+                                            <option>КАМАЗ</option>
+                                            <option>КРАЗ</option>
+                                            <option>ЛАЗ</option>
+                                            <option>МАЗ</option>
+                                            <option>МОСКВИЧ</option>
+                                            <option>МОТО</option>
+                                            <option>ПАЗ</option>
+                                            <option>ПРИЧІП</option>
+                                            <option>РАФ</option>
+                                            <option>РЕТРО</option>
+                                            <option>СПЕЦТЕХНІКА</option>
+                                            <option>УАЗ</option>
+                                            <option>УРАЛ</option>
+                                            <option>ХАЗ</option>
+                                            <option>&nbsp;</option>
+                                            <option value="0">Всі моделі</option>
+                                        </select></div>
+                                    <div class="hd1-md-w hd2-w">
+                                        <select name="model[]" class="form-control form-select" id="sf-model" disabled="">
+                                            <option value="0">Модель</option>
+                                        </select>
+                                    </div>
+                                    <hr class="d-block d-sm-none d-lg-block">
+                                    <div><select name="year[]" class="form-control form-select">
+                                            <option value="0">Рік від</option>
+                                            <option value="2024">від 2024</option>
+                                            <option value="2023">від 2023</option>
+                                            <option value="2022">від 2022</option>
+                                            <option value="2021">від 2021</option>
+                                            <option value="2020">від 2020</option>
+                                            <option value="2019">від 2019</option>
+                                            <option value="2018">від 2018</option>
+                                            <option value="2017">від 2017</option>
+                                            <option value="2016">від 2016</option>
+                                            <option value="2015">від 2015</option>
+                                            <option value="2014">від 2014</option>
+                                            <option value="2013">від 2013</option>
+                                            <option value="2012">від 2012</option>
+                                            <option value="2011">від 2011</option>
+                                            <option value="2010">від 2010</option>
+                                            <option value="2009">від 2009</option>
+                                            <option value="2008">від 2008</option>
+                                            <option value="2007">від 2007</option>
+                                            <option value="2006">від 2006</option>
+                                            <option value="2005">від 2005</option>
+                                            <option value="2004">від 2004</option>
+                                            <option value="2003">від 2003</option>
+                                            <option value="2002">від 2002</option>
+                                            <option value="2001">від 2001</option>
+                                            <option value="2000">від 2000</option>
+                                            <option value="1999">від 1999</option>
+                                            <option value="1998">від 1998</option>
+                                            <option value="1997">від 1997</option>
+                                            <option value="1996">від 1996</option>
+                                            <option value="1995">від 1995</option>
+                                            <option value="1994">від 1994</option>
+                                            <option value="1993">від 1993</option>
+                                            <option value="1992">від 1992</option>
+                                            <option value="1991">від 1991</option>
+                                            <option value="1990">від 1990</option>
+                                            <option value="1989">від 1989</option>
+                                            <option value="1988">від 1988</option>
+                                            <option value="1987">від 1987</option>
+                                            <option value="1986">від 1986</option>
+                                            <option value="1985">від 1985</option>
+                                        </select></div>
+                                    <div><select name="year[]" class="form-control form-select">
+                                            <option value="0" hidden="">до 2024</option>
+                                            <option value="2024">до 2024</option>
+                                            <option value="2023">до 2023</option>
+                                            <option value="2022">до 2022</option>
+                                            <option value="2021">до 2021</option>
+                                            <option value="2020">до 2020</option>
+                                            <option value="2019">до 2019</option>
+                                            <option value="2018">до 2018</option>
+                                            <option value="2017">до 2017</option>
+                                            <option value="2016">до 2016</option>
+                                            <option value="2015">до 2015</option>
+                                            <option value="2014">до 2014</option>
+                                            <option value="2013">до 2013</option>
+                                            <option value="2012">до 2012</option>
+                                            <option value="2011">до 2011</option>
+                                            <option value="2010">до 2010</option>
+                                            <option value="2009">до 2009</option>
+                                            <option value="2008">до 2008</option>
+                                            <option value="2007">до 2007</option>
+                                            <option value="2006">до 2006</option>
+                                            <option value="2005">до 2005</option>
+                                            <option value="2004">до 2004</option>
+                                            <option value="2003">до 2003</option>
+                                            <option value="2002">до 2002</option>
+                                            <option value="2001">до 2001</option>
+                                            <option value="2000">до 2000</option>
+                                            <option value="1999">до 1999</option>
+                                            <option value="1998">до 1998</option>
+                                            <option value="1997">до 1997</option>
+                                            <option value="1996">до 1996</option>
+                                            <option value="1995">до 1995</option>
+                                            <option value="1994">до 1994</option>
+                                            <option value="1993">до 1993</option>
+                                            <option value="1992">до 1992</option>
+                                            <option value="1991">до 1991</option>
+                                            <option value="1990">до 1990</option>
+                                            <option value="1989">до 1989</option>
+                                            <option value="1988">до 1988</option>
+                                            <option value="1987">до 1987</option>
+                                            <option value="1986">до 1986</option>
+                                            <option value="1985">до 1985</option>
+                                        </select></div>
+                                    <div><select name="price[]" class="form-control form-select price-cur">
+                                            <option value="0">Ціна від</option>
+                                            <option value="1" class="x xh x1">€</option>
+                                            <option value="2" class="x xh x2">ГРН</option>
+                                            <option disabled="" class="xh">&nbsp;</option>
+                                            <option>$500</option>
+                                            <option>$1'000</option>
+                                            <option>$1'500</option>
+                                            <option>$2'000</option>
+                                            <option>$2'500</option>
+                                            <option>$3'000</option>
+                                            <option>$3'500</option>
+                                            <option>$4'000</option>
+                                            <option>$5'000</option>
+                                            <option>$6'000</option>
+                                            <option>$7'000</option>
+                                            <option>$8'000</option>
+                                            <option>$9'000</option>
+                                            <option>$10'000</option>
+                                            <option>$11'000</option>
+                                            <option>$12'000</option>
+                                            <option>$13'000</option>
+                                            <option>$14'000</option>
+                                            <option>$15'000</option>
+                                            <option>$16'000</option>
+                                            <option>$17'000</option>
+                                            <option>$18'000</option>
+                                            <option>$19'000</option>
+                                            <option>$20'000</option>
+                                            <option>$25'000</option>
+                                            <option>$30'000</option>
+                                            <option>$40'000</option>
+                                            <option>$50'000</option>
+                                            <option>$75'000</option>
+                                            <option>$100'000</option>
+                                            <option>$150'000</option>
+                                            <option value="0">будь-яка ціна</option>
+                                        </select></div>
+                                    <div>
+                                        <select name="price[]" class="form-control form-select price-cur">
+                                            <option value="0">Ціна до</option>
+                                            <option value="1" class="x xh x1">€</option>
+                                            <option value="2" class="x xh x2">ГРН</option>
+                                            <option disabled="" class="xh">&nbsp;</option>
+                                            <option>$500</option>
+                                            <option>$1'000</option>
+                                            <option>$1'500</option>
+                                            <option>$2'000</option>
+                                            <option>$2'500</option>
+                                            <option>$3'000</option>
+                                            <option>$3'500</option>
+                                            <option>$4'000</option>
+                                            <option>$5'000</option>
+                                            <option>$6'000</option>
+                                            <option>$7'000</option>
+                                            <option>$8'000</option>
+                                            <option>$9'000</option>
+                                            <option>$10'000</option>
+                                            <option>$11'000</option>
+                                            <option>$12'000</option>
+                                            <option>$13'000</option>
+                                            <option>$14'000</option>
+                                            <option>$15'000</option>
+                                            <option>$16'000</option>
+                                            <option>$17'000</option>
+                                            <option>$18'000</option>
+                                            <option>$19'000</option>
+                                            <option>$20'000</option>
+                                            <option>$25'000</option>
+                                            <option>$30'000</option>
+                                            <option>$40'000</option>
+                                            <option>$50'000</option>
+                                            <option>$75'000</option>
+                                            <option>$100'000</option>
+                                            <option>$150'000</option>
+                                            <option value="0">будь-яка ціна</option>
+                                        </select>
+                                    </div>
+                                    <input type="hidden" name="x" value="0">
+                                    <div class="w-100 my-2 d-lg-none"><a href="javascript:void(0)" class="btn btn-warning w-100 btn-table">Пошук на RST</a></div>
+                                    <hr class="d-block d-sm-none d-lg-block">
+                                    <div class="hd3">
+                                        <select name="fuel" class="form-control form-select bg">
+                                            <option value="0" selected="selected">Паливо</option>
+                                            <option>Бензин</option>
+                                            <option>Дизель</option>
+                                            <option>Газ/Бензин</option>
+                                            <option>Газ</option>
+                                            <option>Гібрид</option>
+                                            <option>Електро</option>
+                                            <option>Водень</option>
+                                        </select></div>
+                                    <div class="hd3"><select class="form-control form-select bg nengine">
+                                            <option value="0-0">Двигун</option>
+                                            <option value="0-0">будь-який об'єм</option>
+                                            <option value="0-1000">до 1.0 л</option>
+                                            <option value="0-1400">до 1.4 л</option>
+                                            <option value="0-1600">до 1.6 л</option>
+                                            <option value="0-1800">до 1.8 л</option>
+                                            <option value="0-2000">до 2.0 л</option>
+                                            <option value="0-2500">до 2.5 л</option>
+                                            <option value="0-3400">до 3.4 л</option>
+                                            <option value="3500-0">від 3.5 л</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option disabled="">від - до</option>
+                                            <option value="1001-1500">1.0 - 1.5 л</option>
+                                            <option value="1501-1900">1.6 - 1.9 л</option>
+                                            <option value="1901-2400">2.0 - 2.4 л</option>
+                                            <option value="2401-3400">2.5 - 3.4 л</option>
+                                            <option value="3401-4400">3.5 - 4.4 л</option>
+                                            <option value="4401-5900">4.5 - 5.9 л</option>
+                                            <option value="5901-10000">6.0 - 10 л</option>
+                                            <option value="10001-12000">10 - 12 л</option>
+                                            <option value="12001-15000">12 - 15 л</option>
+                                            <option value="0-0">будь-який об'єм</option>
+                                        </select>
+                                        <div class="d-none"><input type="hidden" name="engine[]" value="0"><input type="hidden" name="engine[]" value="0"></div>
+                                    </div>
+                                    <div class="hd3 hd4">
+                                        <select name="gear" class="form-control form-select bg">
+                                            <option value="0" selected="selected">КПП</option>
+                                            <option>Автомат</option>
+                                            <option>Механіка</option>
+                                        </select></div>
+                                    <div class="hd3 hd4">
+                                        <select name="d" class="form-control form-select bg">
+                                            <option value="0" selected="selected">Привід</option>
+                                            <option>Передній</option>
+                                            <option>Задній</option>
+                                            <option>Повний</option>
+                                        </select></div>
+                                    <hr class="d-block d-sm-none d-lg-block hd3">
+                                    <div>
+                                        <select name="s" class="form-control form-select bg">
+                                            <option value="0" selected="selected">Стан</option>
+                                            <option>БУ - Не потребує ремонту</option>
+                                            <option>Нові - з автосалону</option>
+                                            <option>Свіжепригнані - добрий стан</option>
+                                            <option>Потребує ремонту</option>
+                                            <option>Після ДТП</option>
+                                            <option>На запчастини</option>
+                                            <option>Нерозмитнені</option>
+                                            <option>Проблемні док-ти</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select name="z" class="form-control form-select bg">
+                                            <option value="0">Пробіг</option>
+                                            <option>до 30 тис</option>
+                                            <option>до 50 тис</option>
+                                            <option>до 100 тис</option>
+                                            <option>до 150 тис</option>
+                                            <option>до 200 тис</option>
+                                            <option>до 300 тис</option>
+                                            <option>до 500 тис</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option>30 - 50 тис</option>
+                                            <option>50 - 100 тис</option>
+                                            <option>100 - 150 тис</option>
+                                            <option>150 - 200 тис</option>
+                                            <option>200 - 300 тис</option>
+                                            <option>300 - 500 тис</option>
+                                            <option>від 500 тис</option>
+                                            <option value="0">будь-який пробіг</option>
+                                        </select>
+                                    </div>
+                                    <div class="reset-w"><a href="#" class="btn btn-grey bg ri ri-trash ps-ri sf-reset">скинути</a></div>
+                                    <div class="position-relative"><i class="ri ri-sort-ld"></i>
+                                        <select name="sort" class="form-control form-select bg ps-ri sort">
+                                            <option value="0" selected="selected">За замовчуванням</option>
+                                            <option>Від дешевих</option>
+                                            <option>Від дорогих</option>
+                                            <option>За датою</option>
+                                            <option>За роком випуску</option>
+                                            <option disabled="">&nbsp;</option>
+                                            <option disabled="">Для автовикупу:</option>
+                                            <option value="list">Платна підписка</option>
+                                        </select></div>
+                                </div>
+                                <input type="hidden" name="k" value="0">
+                            </div>
+                            <input type="hidden" name="task" value="newresults">
+                        </form>
+                        <div id="jb-pb-sf" class="sticky-lg-top">
+                            <div class="tb tb-c bg-body pe-3 overflow-visible sticky-top d-none d-lg-block">
+                                <a href="/ukr/oldcars/" class="t w-50 text-center sf-reset"><i class="ri ri-trash ri-15 me-2"></i>скинути</a>
+                                <a id="top-sf" href="#content-top" class="t w-50 text-center d position-relative"><i class="ri ri-param ri-15 me-2"></i>змінити</a>
+                            </div>
+                            <div class="jb-p br-md-2 shadow" data-add-c="p-sf-b" style="width:300px;height:250px"></div>
+                            <div class="jb-w overflow-hidden" style="width: 300px; height: 250px; display: block; position: absolute; left: 0px; top: 49.6px; margin-top: 104px; margin-left: 0px;" data-c="p-sf-b">
+                                <div id="jb-b"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sf-region-modal" class="modal  sf-modal" role="dialog" aria-modal="true">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                            <div class="modal-content overflow-hidden sf-region-modal-modal-content">
+                                <div class="modal-header border-grey py-2 align-items-center"><b class="fs-5">Область</b>
+                                    <button class="close close-region" data-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body pt-0">
+                                    <div class="list-unstyled row m-0 fs-2">
+                                        <div class="col-12 col-sm-6 px-0 mt-3">
+                                          >
+                                                <legend class="fs-3 text-black mb-1"><u class="td-u-g"><b>Захід:</b></u></legend>
+                                                <ul>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Волинська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Закарпатська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Івано-Франківська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Львівська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Рівненська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Тернопільська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Хмельницька</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Чернівецька</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-6 px-0 mt-3">
+                                           >
+                                                <legend class="fs-3 text-black mb-1"><u class="td-u-g"><b>Центр:</b></u></legend>
+                                                <ul>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Вінницька</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Житомирська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="fw-bold"><input type="checkbox" class="form-check-input me-2" value="6" name="region[]">Київ та обл.</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Кіровоградська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Полтавська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Сумська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Черкаська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Чернігівська</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-6 px-0 mt-3">
+                                            <fieldset>
+                                                <legend class="fs-3 text-black mb-1"><u class="td-u-g"><b>Південь:</b></u></legend>
+                                                <ul>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">АР Крим</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Миколаївська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2" name="region[]">Одеська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-input me-2"  name="region[]">Херсонська</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 col-sm-6 px-0 mt-3">
+                                            <fieldset>
+                                                <legend class="fs-3 text-black mb-1"><u class="td-u-g"><b>Схід:</b></u></legend>
+                                                <ul>
+                                                    <li><label>
+                                                            <input type="checkbox" class="form-check-i name="region[]">Дніпропетровська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-i name="region[]">Донецька</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-i name="region[]">Запорізька</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-in name="region[]">Луганська</label>
+                                                    </li>
+                                                    <li>
+                                                        <label><input type="checkbox" class="form-check-i name="region[]">Харківська</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 offset-lg-2 mt-4 mb-2"><button class="btn btn-warning w-100" data-dismiss="modal">Додати обрані</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sf-body-modal" class="modal fade sf-modal modal-wb show" aria-modal="true" role="dialog" style="padding-left: 0px;">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                            <div class="modal-content overflow-hidden">
+                                <div class="modal-header border-grey"><b>Тип кузова</b>
+                                    <button class="close sf-body-modal-click" data-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body row mx-0 py-4">
+                                    <div class="col-12 col-sm-6 px-0 d-flex align-items-center sf-body-modal-div">
+                                        <ul class="list list-unstyled row m-0 fs-2 sf-body-modal-ul">
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2"  name="body[]">Седан</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Універсал</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Хетчбэк 4/5 дверей</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Хетчбек 2/3 двері</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Купе</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Кабріолет/Родстер</label>
+                                            </li>
+                                            <li class="mt-1">
+                                                <p class="text-grey p-1"></p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Позашляховик</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2"  name="body[]">Позашляховик-пікап</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2"  name="body[]">Мінівен</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2"  name="body[]">Фургон пасажир</label></li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2"  name="body[]">Мікробус пасажир</label>
+                                            </li>
+                                            <li class="mt-1">
+                                                <p class="text-grey p-1"></p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Компактний</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Середньорозмірний</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" class="form-check-input me-2" name="body[]">Бізнес/Преміум</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 px-0 d-none d-sm-flex flex-column justify-content-center align-items-center border-start border-grey fs-1 text-grey">
+                                        <p>Приклад:</p>
+                                        <div id="sf-body-modal-img" class="cr-i cr-0 my-3"></div>
+                                        <p>Виберіть тип кузова</p>
+                                    </div>
+                                    <div class="col-12 col-lg-8 offset-lg-2 mt-4 pt-2">
+                                        <button class="btn btn-warning w-100" data-bs-dismiss="modal">Додати обрані</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-results">
+                        <div class="sticky-top tbw ps-2 ps-md-0 bg-body">
+                            <div id="search-tags" class="d-flex align-items-start w-100">
+                                <div class="tb"><i id="t-all" class="t a">Всі</i>
+                                    <label>
+                                        <input type="checkbox" name="price"><i>до $5'000</i>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="price"><i>$5'000 - $10'000</i>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="price"><i>від $10'000</i>>
+                                    </label>
+                                    <a href="#" class="t del sf-reset">видалити</a>
+                                </div>
+                                <b class="tbra pe-s"><i class="ri ri-chevron-r"></i></b>
+                                <div class="btn-sort"><button class="dropend t ri ri-sort-ld" data-toggle="dropdown"></button>
+                                    <ul class="dropdown-menu dropdown-menu-end overflow-hidden shadow-lg">
+                                        <li class="dropdown-item disabled fs-2">Сортування:</li>
+                                        <li><label class="dropdown-item ps-4 active"><input class="d-none" type="radio" name="sort" value="0" checked="">За замовчуванням</label></li>
+                                        <li><label class="dropdown-item ps-4"><input class="d-none" type="radio" name="sort" value="21">Від дешевих</label></li>
+                                        <li><label class="dropdown-item ps-4"><input class="d-none" type="radio" name="sort" value="22">Від дорогих</label></li>
+                                        <li><label class="dropdown-item ps-4"><input class="d-none" type="radio" name="sort" value="23">За датою</label></li>
+                                        <li><label class="dropdown-item ps-4"><input class="d-none" type="radio" name="sort" value="24">За роком випуску</label></li>
+                                        <li class="dropdown-item disabled fs-2 mt-3 ps-2"><i class="ri ri-leaf ri-12 me-1"></i>Для автовикупу:</li>
+                                        <li><a class="dropdown-item ps-4" href="#">Платна підписка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="p-1" class="page bg-body">
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="i car-i mb-3 bg-white br-md-2 shadow">
+                                <div class="p">
+                                    <img src="#" alt="car" class="wm">
+                                    <img alt="VOLVO XC90 купити авто" src="#">
+                                </div>
+                                <div class="c">
+                                    <div class="t"><a class="ai" href="#">VOLVO<i class="mx-2">•</i><i>Momentum Pro</i></a>
+                                        <div class="pr"><b>$20'000<i>= 1'102'400грн</i></b>
+                                            <div class="bgs"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ps">
+                                        <ul>
+                                            <li title="рік" class="ri ri-date">2024 р</li>
+                                            <li title="двигун" class="ri ri-en">2.0<i title="паливо кпп"> Диз (Авт)</i></li>
+                                            <li title="пробiг" class="ri ri-speed">30'000<i> км</i></li>
+                                            <li title="регіон" class="ri ri-geo">Дніпро</li>
+                                        </ul>
+                                    </div>
+                                    <div class="in" title="платно - 242,5 грн/доба">
+                                        <i class="ri ri-leaf"></i>2 дня<i>, ТОП</i><i class="ri ri-pin"></i>
+                                    </div>
+                                </div><a href="javascript:void(0)" class="bstar" title="додати в обране"><i class="ri bms-icon"></i></a>
+                            </div>
+                            <div class="jb-p br-md-2 shadow my-3 mx-auto d-lg-none" style="width:300px;height:250px"></div>
+                        </div>
+                        <ul class="pgnl br-md-2 shadow">
+                            <li class="m-0">
+                                <ul class="pgnl p-0 d-none d-md-flex">
+                                    <li class="a"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </li>
+                            <li class="next ml-auto ms-auto"><a href="#">наст. <i class="ri ri-chevron-r"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 bl-left-w">
+                <div class="col-12 p-0">
+                    <div class="text-center text-red fs-5 py-5">
+                        <i class="ri ri-plus ri-16 me-1"></i> <a href="#" class="text-red">Розмістити оголошення</a>
+                    </div>
+                </div>
+            </div>
+            <div id="links-footer" class="row mx-0 mb-2 bl-left-w">
+                <div class="links-footer-left col-12 col-md-5 px-0 mb-3 mb-md-0 pe-md-3 pe-lg-0 bl-left">
+                    <div class="bg-white shadow br-md-2 overflow-hidden h-md-100">
+                        <article class="m a-50">
+                            <header class="i">
+                                <h2 class="fs-4 mb-0"><b>Автопродаж</b></h2>
+                                <p class="mb-0 text-grey fs-2 lh-1 mt-1"><a href="/ukr/" class="text-grey text-decoration-none">автобазар України</a></p>
+                            </header>
+                            <nav class="i border-0 llf" data-pop="2">
+                                <a href="#" title="авто базар Вінницька область" class="p1 h">Вінницька</a>
+                                <a href="#" title="авто базар Волинська область" class="p1 h">Волинська</a>
+                                <a href="#" title="авто базар Дніпропетровська область" class="p2 h wl">Дніпропетровська</a>
+                                <a href="#" title="авто базар Донецька область" class="p1 h">Донецька</a>
+                                <a href="#" title="авто базар Житомирська область" class="p1 h">Житомирська</a>
+                                <a href="#" title="авто базар Закарпатська область" class="p1 h">Закарпатська</a>
+                                <a href="#" title="авто базар Запорізька область" class="p1 h">Запорізька</a>
+                                <a href="#" title="авто базар Івано-Франківська область" class="p1 h">Івано-Франківська</a>
+                                <a href="#" title="авто базар Київ та обл. область" class="p2 h wl">Київ та обл.</a>
+                                <a href="#" title="авто базар Кіровоградська область" class="p2 h wl">Кіровоградська</a>
+                                <a href="#" title="авто базар АР Крим область" class="p1 h">АР Крим</a>
+                                <a href="#" title="авто базар Луганська область" class="p1 h">Луганська</a>
+                                <a href="#" title="авто базар Львівська область" class="p1 h">Львівська</a>
+                                <a href="#" title="авто базар Миколаївська область" class="p2 h wl">Миколаївська</a>
+                                <a href="#" title="авто базар Одеська область" class="p2 h wl">Одеська</a>
+                                <a href="#" title="авто базар Полтавська область" class="p2 h wl">Полтавська</a>
+                                <a href="#" title="авто базар Рівненська область" class="p1 h">Рівненська</a>
+                                <a href="#" title="авто базар Сумська область" class="p1 h">Сумська</a>
+                                <a href="#" title="авто базар Тернопільська область" class="p1 h">Тернопільська</a>
+                                <a href="#" title="авто базар Харківська область" class="p2 h wl">Харківська</a>
+                                <a href="#" title="авто базар Херсонська область" class="p1 h">Херсонська</a>
+                                <a href="#" title="авто базар Хмельницька область" class="p1 h">Хмельницька</a>
+                                <a href="#" title="авто базар Черкаська область" class="p1 h">Черкаська</a>
+                                <a href="#" title="авто базар Чернігівська область" class="p1 h">Чернігівська</a>
+                                <a href="#" title="авто базар Чернівецька область" class="p1 h">Чернівецька</a>
+                                <a href="#" class="p0 h">вся Україна</a>
+                                <a href="javascript:void(0)" class="show show-button"><u>ще</u> <i class="ri ri-chevron-r ri-14"></i></a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-12 px-0">
+                    <div class="bg-white shadow br-md-2 overflow-hidden h-md-100">
+                        <article class="m a-sm bold-p3">
+                            <header class="i">
+                                <h2 class="fs-4 mb-0"><b>Продаж авто</b></h2>
+                                <p class="mb-0 text-grey fs-2 lh-1 mt-1">за популярними марками</p>
+                            </header>
+                            <nav class="i border-0 llf" data-pop="3">
+                                <a href="#" title="ACURA купити" class="p2 h">ACURA</a>
+                                <a href="#" title="ALFA ROMEO купити" class="p2 h">ALFA ROMEO</a>
+                                <a href="#" title="ARO купити" class="p2 h">ARO</a>
+                                <a href="#" title="ASIA купити" class="p2 h">ASIA</a>
+                                <a href="#" title="AUDI купити" class="p3 h wr-lg wr-md wr">AUDI</a>
+                                <a href="#" title="AVIA купити" class="p2 h">AVIA</a>
+                                <a href="#" title="BAIC купити" class="p2 h">BAIC</a>
+                                <a href="#" title="BMW купити" class="p3 h wr-lg wr-md wr">BMW</a>
+                                <a href="#" title="BRILLIANCE купити" class="p2 h">BRILLIANCE</a>
+                                <a href="#" title="BUICK купити" class="p2 h">BUICK</a>
+                                <a href="#" title="BYD купити" class="p2 h">BYD</a>
+                                <a href="#" title="CADILLAC купити" class="p2 h">CADILLAC</a>
+                                <a href="#" title="CHANA купити" class="p2 h">CHANA</a>
+                                <a href="#" title="CHERY купити" class="p3 h wr-lg wr-md wr">CHERY</a>
+                                <a href="#" title="CHEVROLET купити" class="p3 h wr-lg wr-md wr">CHEVROLET</a>
+                                <a href="#" title="CHRYSLER купити" class="p2 h">CHRYSLER</a>
+                                <a href="#" title="CITROEN купити" class="p3 h wr-lg wr-md wr">CITROEN</a>
+                                <a href="#" title="DACIA купити" class="p3 h wr-lg wr-md wr">DACIA</a>
+                                <a href="#" title="DADI купити" class="p2 h">DADI</a>
+                                <a href="#" title="DAEWOO купити" class="p3 h wr-lg wr-md wr">DAEWOO</a>
+                                <a href="#" title="DAF купити" class="p2 h">DAF</a>
+                                <a href="#" title="DAIHATSU купити" class="p2 h">DAIHATSU</a>
+                                <a href="#" title="DODGE купити" class="p2 h">DODGE</a>
+                                <a href="#" title="DONGFENG купити" class="p2 h">DONGFENG</a>
+                                <a href="#" title="FAW купити" class="p2 h">FAW</a>
+                                <a href="#" title="FIAT купити" class="p3 h wr-lg wr-md wr">FIAT</a>
+                                <a href="#" title="FORD купити" class="p3 h wr-lg wr-md wr">FORD</a>
+                                <a href="#" title="FOTON купити" class="p2 h">FOTON</a>
+                                <a href="#" title="FSO купити" class="p2 h">FSO</a>
+                                <a href="#" title="GEELY купити" class="p3 h wr-lg wr-md wr">GEELY</a>
+                                <a href="#" title="GREAT WALL купити" class="p2 h">GREAT WALL</a>
+                                <a href="#" title="HAFEI купити" class="p2 h">HAFEI</a>
+                                <a href="#" title="Haval купити" class="p2 h">Haval</a>
+                                <a href="#" title="HONDA купити" class="p3 h wr-lg wr-md wr">HONDA</a>
+                                <a href="#" title="HUMMER купити" class="p2 h">HUMMER</a>
+                                <a href="#" title="HYUNDAI купити" class="p3 h wr-lg wr-md">HYUNDAI</a>
+                                <a href="#" title="I-VAN купити" class="p2 h">I-VAN</a>
+                                <a href="#" title="INFINITI купити" class="p2 h">INFINITI</a>
+                                <a href="#" title="ISUZU купити" class="p2 h">ISUZU</a>
+                                <a href="#" title="IVECO купити" class="p2 h">IVECO</a>
+                                <a href="#" title="JAC купити" class="p2 h">JAC</a>
+                                <a href="#" title="JAGUAR купити" class="p2 h">JAGUAR</a>
+                                <a href="#" title="JEEP купити" class="p3 h wr-lg wr-md">JEEP</a>
+                                <a href="#" title="JONWAY купити" class="p2 h">JONWAY</a>
+                                <a href="#" title="KIA купити" class="p3 h wr-lg wr-md">KIA</a>
+                                <a href="#" title="LANCIA купити" class="p2 h">LANCIA</a>
+                                <a href="#" title="LAND ROVER купити" class="p2 h">LAND ROVER</a>
+                                <a href="#" title="LDV купити" class="p2 h">LDV</a>
+                                <a href="#" title="LEXUS купити" class="p3 h wr-lg wr-md">LEXUS</a>
+                                <a href="#" title="LIFAN купити" class="p2 h">LIFAN</a>
+                                <a href="#" title="LINCOLN купити" class="p2 h">LINCOLN</a>
+                                <a href="#" title="MAN купити" class="p2 h">MAN</a>
+                                <a href="#" title="MASERATI купити" class="p2 h">MASERATI</a>
+                                <a href="#" title="MAZDA купити" class="p3 h wr-lg">MAZDA</a>
+                                <a href="#" title="MERCEDES купити" class="p3 h wr-lg">MERCEDES</a>
+                                <a href="#" title="MG купити" class="p2 h">MG</a>
+                                <a href="#" title="MINI купити" class="p2 h">MINI</a>
+                                <a href="#" title="MITSUBISHI купити" class="p3 h wr-lg">MITSUBISHI</a>
+                                <a href="#" title="NEOPLAN купити" class="p2 h">NEOPLAN</a>
+                                <a href="#" title="NISSAN купити" class="p3 h wr-lg">NISSAN</a>
+                                <a href="#" title="OPEL купити" class="p3 h">OPEL</a>
+                                <a href="#" title="PEUGEOT купити" class="p3 h">PEUGEOT</a>
+                                <a href="#" title="PORSCHE купити" class="p2 h">PORSCHE</a>
+                                <a href="#" title="Ravon купити" class="p2 h">Ravon</a>
+                                <a href="#" title="RENAULT купити" class="p3 h">RENAULT</a>
+                                <a href="#" title="ROVER купити" class="p2 h">ROVER</a>
+                                <a href="#" title="SAAB купити" class="p2 h">SAAB</a>
+                                <a href="#" title="SAMAND купити" class="p2 h">SAMAND</a>
+                                <a href="#" title="SEAT купити" class="p2 h">SEAT</a>
+                                <a href="#" title="SKODA купити" class="p3 h">SKODA</a>
+                                <a href="#" title="Skywell купити" class="p2 h">Skywell</a>
+                                <a href="#" title="SMART купити" class="p2 h">SMART</a>
+                                <a href="#" title="SSANGYONG купити" class="p2 h">SSANGYONG</a>
+                                <a href="#" title="SUBARU купити" class="p3 h">SUBARU</a>
+                                <a href="#" title="SUZUKI купити" class="p2 h">SUZUKI</a>
+                                <a href="#" title="TATA купити" class="p2 h">TATA</a>
+                                <a href="#" title="Tesla купити" class="p2 h">Tesla</a>
+                                <a href="#" title="TOYOTA купити" class="p3 h">TOYOTA</a>
+                                <a href="#" title="VOLKSWAGEN купити" class="p3 h">VOLKSWAGEN</a>
+                                <a href="#" title="VOLVO купити" class="p3 h">VOLVO</a>
+                                <a href="#" title="WARTBURG купити" class="p2 h">WARTBURG</a>
+                                <a href="#" title="Zeekr купити" class="p2 h">Zeekr</a>
+                                <a href="#" title="ZUK купити" class="p2 h">ZUK</a>
+                                <a href="#" title="ZXAUTO купити" class="p2 h">ZXAUTO</a>
+                                <a href="#" title="БАЗ купити" class="p2 h">БАЗ</a>
+                                <a href="#" title="БОГДАН купити" class="p2 h">БОГДАН</a>
+                                <a href="#" title="ВАЗ купити" class="p3 h">ВАЗ</a>
+                                <a href="#" title="ГАЗ купити" class="p3 h">ГАЗ</a>
+                                <a href="#" title="ЗАЗ купити" class="p3 h">ЗАЗ</a>
+                                <a href="#" title="ЗІЛ купити" class="p2 h">ЗІЛ</a>
+                                <a href="#" title="ІЖ купити" class="p2 h">ІЖ</a>
+                                <a href="#" title="КАМАЗ купити" class="p2 h">КАМАЗ</a>
+                                <a href="#" title="КРАЗ купити" class="p2 h">КРАЗ</a>
+                                <a href="#" title="МАЗ купити" class="p2 h">МАЗ</a>
+                                <a href="#" title="МОСКВИЧ купити" class="p2 h">МОСКВИЧ</a>
+                                <a href="#" title="МОТО купити" class="p2 h">МОТО</a>
+                                <a href="#" title="ПРИЧІП купити" class="p2 h">ПРИЧІП</a>
+                                <a href="#" title="РАФ купити" class="p2 h">РАФ</a>
+                                <a href="#" title="РЕТРО купити" class="p2 h">РЕТРО</a>
+                                <a href="#" title="СПЕЦТЕХНІКА купити" class="p2 h">СПЕЦТЕХНІКА</a>
+                                <a href="#" title="УАЗ купити" class="p2 h">УАЗ</a>
+                                <a href="#" title="УРАЛ купити" class="p2 h">УРАЛ</a>
+                                <a href="javascript:void(0)" class="show show-button"><u>ще</u> <i class="ri ri-chevron-r ri-14"></i></a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="rst-footer" class="pb-2 px-2">
+            <small class="text-grey">© 2006-2024 RST™</small>
+            <a id="fb-review" href="#" class="btn btn-outline-secondary fs-1 me-2 ml-auto ms-auto d-none d-sm-inline-block" data-toggle="modal" data-target="#modal-fb-like">
+                <i class="ri ri-like ri-14 me-2"></i>оцінити RST
+            </a>
+            <span class="me-2 d-none d-sm-inline-block">|</span>
+            <small class="me-3 d-none d-sm-inline-block">
+                <a href="#" hreflang="ru" class="btn btn-outline-secondary fs-1 rst-clang">мова сайту</a>
+            </small>
+            <a href="#" class="btn-menu-open btn-menu btn btn-outline-secondary py-0 px-2" data-toggle="modal" data-target="#rst-menu-modal">
+                <i class="icon-menu"></i>
+            </a>
+        </footer>
+        <div id="modal-fb-like" class="modal fade " tabindex="-1" aria-modal="true" role="dialog" style="padding-left: 0px; ">
+            <div class="modal-dialog modal-dialog-centered justify-content-center align-items-end">
+                <div class="modal-content overflow-hidden mb-md-5 ml-1 mr-1">
+                    <div class="modal-header border-grey"><b class="t-like">Оцінити RST</b><b class="t-fb">Як покращити RST?</b>
+                        <button class="close close-like" data-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body p-0 hide-fb-u">
+                        <div id="fb-like" class="py-4 text-center">
+                            <button class="btn btn-white mr-5 btn-dl"><i class="ri ri-dlike ri-42"></i></button>
+                            <button class="btn btn-white ml-5 btn-l"><i class="ri ri-like ri-42"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
